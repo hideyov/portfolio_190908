@@ -11,9 +11,10 @@
 </head>
 
 <body>
+
 	<header>
 
-		<nav class="navbar navbar-expand-sm bg-dark navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-expand-sm bg-dark navbar-fixed-top">
 
 			<a href="#profile" class="navbar-brand logo">Hideyo Uesugi /Portfolio</a>
 			<!-- 横幅が狭い時に出るハンバーガーボタン -->
@@ -24,287 +25,406 @@
 			</button>
 
 			<div id="nav-bar" class="collapse navbar-collapse">
-<!--				<ul class="navbar-nav">-->
+				<!--				<ul class="navbar-nav">-->
 				<ul>
 					<li class="nav-item"><a class="nav-link" href="#profile">profile</a></li>
 					<li class="nav-item"><a class="nav-link" href="#web">web site</a></li>
 					<li class="nav-item"><a class="nav-link" href="#appli">application</a></li>
 					<li class="nav-item"><a class="nav-link" href="#dtp">dtp</a></li>
+					<li class="nav-item"><a class="nav-link" href="#movie">movie</a></li>
+
+
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
 	</header>
-	<div id="container" class="">
+	<div id="container">
 
-		<div id="contents" class="m-3">
-			<div id="profile" class="content-section">
-				<article>
-					<h1 class="mt-5 mx-3">Hideyo Uesugi <small>/ profile</small></h1>
-					<div class="row mb-1 mx-1">
-						<section class="explain p-3 col-md-3">
+		<div class="content-section">
+			<h1 id="profile" class="content-category">profile</h1>
+			<article>
+				<h2 class="content-title">Hideyo Uesugi</h2>
+				<div class="row">
+					<section class="explain col-sm-3">
+						<h3 class="hidden">
+						Hideyo Uesugi profile
+						</h3>
+						<div>
+							<img src="img/190628_forSlack.jpg" width="120" alt="Hideyo Uesugi">
+						</div>
+					</section>
+					<section class="detail col-sm-9">
+						<h3 class="hidden">
+							Hideyo Uesugi Bio
+						</h3>
+						<p>
+							<b>Bio：</b>
+							1963年滋賀県生まれ。1981年、広島修道高校卒業。1981年、京都大学理学部生物学科入学。1988年、京都大学理学部生物学科卒業。
+							<br>
+							1989年から2019年現在に至るまで、運送会社、茅ぶき屋根工事のアシスタント、インターネット・メディア、空港での機内清掃などの仕事を渡り歩きつつ、独学でHTML/CSSを学習し、自らの音楽活動のサイトを維持・運営。
+							<br>
+							2015年ごろより、web開発の現場で仕事することを志向して、JavaScript/PHPの学習を始める。
+							<br>
+							独学に限界を感じ、2019年5月から8月にかけて、TECH ACADEMYの「PHP/Laravelコース」「フロントエンドコース」を受講。Laravel/Vue.jsという、フレームワーク学習の端緒につく。
+						</p>
+						<p>
+							<b>Qualification：</b>
+
+							HTML, CSS, JavaScript<br>
+							<b>使用フレームワーク：</b>
+							Vue.js, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年8月5日〜2019年8月12日<br>
+						</p>
+
+					</section>
+				</div>
+			</article>
+
+		</div><!-- .content-section #profile -->
+
+		<div class="content-section">
+			<h2 id="web" class="content-category">Web Site</h2>
+			<article>
+				<h2 class="content-title">Geronimo Label</h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<h3>
+							音楽バンドの公式サイト
+						</h3>
+						<a class="link" href="http://hideyov.sakura.ne.jp/">http://hideyov.sakura.ne.jp/</a>
+						<div>
+							<a href="http://hideyov.sakura.ne.jp/">
+								<img src="img/glsite_scshot.png" width="300" alt="Geronimo Label">
+							</a>
+						</div>
+					</section>
+					<section class="detail col-sm-7">
+						<h3 class="hidden">
+							実装した機能や使用言語など
+						</h3>
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+							<b>使用言語：</b>
+							HTML, CSS, JavaScript<br>
+							<b>使用フレームワーク：</b>
+							Vue.js, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年8月5日〜2019年8月12日<br>
+						</p>
+
+					</section>
+				</div>
+			</article>
+
+			<article>
+				<h2 class="content-title">Yuko Uchida <small>/ オフィシャルサイト</small></h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<h3>
+							陶芸家の公式サイト
+						</h3>
+						<a class="link" href="http://hideyov.sakura.ne.jp/">http://hideyov.sakura.ne.jp/</a>
+						<div>
+							<a href="http://hideyov.sakura.ne.jp/">
+								<img src="img/glsite_scshot.png" width="300" alt="pottery">
+							</a>
+						</div>
+					</section>
+					<section class="detail col-sm-7">
+						<h3 class="hidden">
+							実装した機能や使用言語など
+						</h3>
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+							<b>使用言語：</b>
+							HTML, CSS, JavaScript<br>
+							<b>使用フレームワーク：</b>
+							Vue.js, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年8月5日〜2019年8月12日<br>
+						</p>
+
+					</section>
+				</div>
+			</article>
+		</div><!-- .content-section #web -->
+
+		<div class="content-section">
+			<h2 id="appli" class="content-category">Application</h2>
+			<article>
+				<h2 class="content-title">chatabout <small>/ 投稿アプリ</small></h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<h3>
+							ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーション。
+						</h3>
+						<a class="link" href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
+						<div>
+							<a href="http://chat-about.herokuapp.com/">
+								<img src="img/chatAbout_scshot.png" width="300" alt="">
+							</a>
+						</div>
+
+					</section>
+					<section class="detail col-sm-7">
+						<h3 class="hidden">
+							実装した機能や使用言語など
+						</h3>
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>使用言語：</b>
+							HTML, CSS, PHP<br>
+							<b>使用フレームワーク：</b>
+							Laravel, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年6月20日〜2019年7月7日<br>
+						</p>
+
+						<div>
 							<p>
-							</p>
-							<div>
-								<img src="img/190628_forSlack.jpg" width="120" alt="">
-							</div>
-						</section>
-						<section class="detail p-3 col-md-9">
-							<p>
-								<b>Bio：</b>
-								1963年滋賀県生まれ。1981年、広島修道高校卒業。1981年、京都大学理学部生物学科入学。1988年、京都大学理学部生物学科卒業。
-								<br>
-								1989年から2019年現在に至るまで、運送会社、茅ぶき屋根工事のアシスタント、インターネット・メディア、空港での機内清掃などの仕事を渡り歩きつつ、独学でHTML/CSSを学習し、自らの音楽活動のサイトを維持・運営。
-								<br>
-								2015年ごろより、web開発の現場で仕事することを志向して、JavaScript/PHPの学習を始める。
-								<br>
-								独学に限界を感じ、2019年5月から8月にかけて、TECH ACADEMYの「PHP/Laravelコース」「フロントエンドコース」を受講。Laravel/Vue.jsという、フレームワーク学習の端緒につく。
-							</p>
-							<p>
-								<b>Qualification：</b>
-
-								HTML, CSS, JavaScript(<jQuery></jQuery>)<br>
-								<b>使用フレームワーク：</b>
-								Vue.js, Bootstrap<br>
-								<b>制作期間：</b>
-								2019年8月5日〜2019年8月12日<br>
-							</p>
-
-						</section>
-					</div>
-				</article>
-
-			</div><!-- .content-section #profile -->
-
-			<div id="web" class="content-section">
-				<article>
-					<h1 class="mt-5 mx-3">Geronimo Label <small>/ オリジナルサイト</small></h1>
-					<div class="row mb-1 mx-1">
-						<section class="explain p-3 col-md-5">
-							<p>
-								実在する音楽バンドの仮想・公式サイト<br>
-								<a href="http://hideyov.sakura.ne.jp/">http://hideyov.sakura.ne.jp/</a>
-							</p>
-							<div>
-								<a href="http://hideyov.sakura.ne.jp/">
-									<img src="img/glsite_scshot.png" width="300" alt="">
+								<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+									ワイヤーフレーム
 								</a>
-							</div>
-						</section>
-						<section class="detail p-3 col-md-7">
-							<p>
-								<b>実装した機能：</b>
-								ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
-								<b>実装を目指す機能：</b>
-								Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
-								<b>使用言語：</b>
-								HTML, CSS, JavaScript(<jQuery></jQuery>)<br>
-								<b>使用フレームワーク：</b>
-								Vue.js, Bootstrap<br>
-								<b>制作期間：</b>
-								2019年8月5日〜2019年8月12日<br>
 							</p>
-
-						</section>
-					</div>
-				</article>
-				
-				<article>
-					<h1 class="mt-5 mx-3">Yuko Uchida <small>/ オリジナルサイト</small></h1>
-					<div class="row mb-1 mx-1">
-						<section class="explain p-3 col-md-5">
 							<p>
-								実在する音楽バンドの仮想・公式サイト<br>
-								<a href="http://hideyov.sakura.ne.jp/">http://hideyov.sakura.ne.jp/</a>
-							</p>
-							<div>
-								<a href="http://hideyov.sakura.ne.jp/">
-									<img src="img/glsite_scshot.png" width="300" alt="">
+								<a href="https://github.com/hideyov/techAcademy_chatAbout">
+									<img src="img/icons8-github-32.png" alt="gitHub">
 								</a>
-							</div>
-						</section>
-						<section class="detail p-3 col-md-7">
-							<p>
-								<b>実装した機能：</b>
-								ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
-								<b>実装を目指す機能：</b>
-								Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
-								<b>使用言語：</b>
-								HTML, CSS, JavaScript(<jQuery></jQuery>)<br>
-								<b>使用フレームワーク：</b>
-								Vue.js, Bootstrap<br>
-								<b>制作期間：</b>
-								2019年8月5日〜2019年8月12日<br>
 							</p>
+						</div>
 
-						</section>
-					</div>
-				</article>
-			</div><!-- .content-section #web -->
+						<p>
+							<b>現在実装できておらず、将来的に実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+						</p>
 
-			<div id="appli" class="content-section">
-				<article>
-					<h1 class="mt-5 mx-3">chatabout <small>/ 投稿アプリ</small></h1>
-					<div class="row m-1">
-						<section class="explain p-3 col-md-5">
+					</section>
+				</div>
+			</article>
+		</div><!-- .content-section #appli -->
+
+		<div class="content-section">
+			<h2 id="dtp" class="content-category">DTP</h2>
+			<article>
+				<h2>DTP <small>/ 投稿アプリ</small></h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<p>
+							ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
+							将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
+							<br>
+							<a href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
+						</p>
+						<div>
+							<a href="http://chat-about.herokuapp.com/">
+								<img src="img/chatAbout_scshot.png" width="300" alt="">
+							</a>
+						</div>
+
+					</section>
+					<section class="detail col-sm-7">
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>使用言語：</b>
+							HTML, CSS, PHP<br>
+							<b>使用フレームワーク：</b>
+							Laravel, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年6月20日〜2019年7月7日<br>
+						</p>
+
+						<div>
 							<p>
-								ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
-								将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
-								<br>
-								<a href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
-							</p>
-							<div>
-								<a href="http://chat-about.herokuapp.com/">
-									<img src="img/chatAbout_scshot.png" width="300" alt="">
+								<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+									ワイヤーフレーム
 								</a>
-							</div>
-
-						</section>
-						<section class="detail p-3 col-md-7">
-							<p>
-								<b>実装した機能：</b>
-								ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
-								<b>使用言語：</b>
-								HTML, CSS, PHP<br>
-								<b>使用フレームワーク：</b>
-								Laravel, Bootstrap<br>
-								<b>制作期間：</b>
-								2019年6月20日〜2019年7月7日<br>
 							</p>
-
-							<div>
-								<p>
-									<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
-										ワイヤーフレーム
-									</a>
-								</p>
-								<p>
-									<a href="https://github.com/hideyov/techAcademy_chatAbout">
-										<img src="img/icons8-github-32.png" alt="gitHub">
-									</a>
-								</p>
-							</div>
-
 							<p>
-								<b>現在実装できておらず、将来的に実装を目指す機能：</b>
-								Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
-							</p>
-
-						</section>
-					</div>
-				</article>
-			</div><!-- .content-section #appli -->
-
-			<div id="dtp" class="content-section">
-				<article>
-					<h1 class="mt-5 mx-3">DTP <small>/ 投稿アプリ</small></h1>
-					<div class="row m-1">
-						<section class="explain p-3 col-md-5">
-							<p>
-								ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
-								将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
-								<br>
-								<a href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
-							</p>
-							<div>
-								<a href="http://chat-about.herokuapp.com/">
-									<img src="img/chatAbout_scshot.png" width="300" alt="">
+								<a href="https://github.com/hideyov/techAcademy_chatAbout">
+									<img src="img/icons8-github-32.png" alt="gitHub">
 								</a>
-							</div>
-
-						</section>
-						<section class="detail p-3 col-md-7">
-							<p>
-								<b>実装した機能：</b>
-								ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
-								<b>使用言語：</b>
-								HTML, CSS, PHP<br>
-								<b>使用フレームワーク：</b>
-								Laravel, Bootstrap<br>
-								<b>制作期間：</b>
-								2019年6月20日〜2019年7月7日<br>
 							</p>
+						</div>
 
-							<div>
-								<p>
-									<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
-										ワイヤーフレーム
-									</a>
-								</p>
-								<p>
-									<a href="https://github.com/hideyov/techAcademy_chatAbout">
-										<img src="img/icons8-github-32.png" alt="gitHub">
-									</a>
-								</p>
-							</div>
+						<p>
+							<b>現在実装できておらず、将来的に実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+						</p>
 
+					</section>
+				</div>
+			</article>
+			<article>
+				<h2>DTP <small>/ 投稿アプリ</small></h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<p>
+							ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
+							将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
+							<br>
+							<a href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
+						</p>
+						<div>
+							<a href="http://chat-about.herokuapp.com/">
+								<img src="img/chatAbout_scshot.png" width="300" alt="">
+							</a>
+						</div>
+
+					</section>
+					<section class="detail col-sm-7">
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>使用言語：</b>
+							HTML, CSS, PHP<br>
+							<b>使用フレームワーク：</b>
+							Laravel, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年6月20日〜2019年7月7日<br>
+						</p>
+
+						<div>
 							<p>
-								<b>現在実装できておらず、将来的に実装を目指す機能：</b>
-								Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
-							</p>
-
-						</section>
-					</div>
-				</article>
-				<article>
-					<h1 class="mt-5 mx-3">DTP <small>/ 投稿アプリ</small></h1>
-					<div class="row m-1">
-						<section class="explain p-3 col-md-5">
-							<p>
-								ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
-								将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
-								<br>
-								<a href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
-							</p>
-							<div>
-								<a href="http://chat-about.herokuapp.com/">
-									<img src="img/chatAbout_scshot.png" width="300" alt="">
+								<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+									ワイヤーフレーム
 								</a>
-							</div>
-
-						</section>
-						<section class="detail p-3 col-md-7">
-							<p>
-								<b>実装した機能：</b>
-								ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
-								<b>使用言語：</b>
-								HTML, CSS, PHP<br>
-								<b>使用フレームワーク：</b>
-								Laravel, Bootstrap<br>
-								<b>制作期間：</b>
-								2019年6月20日〜2019年7月7日<br>
 							</p>
-
-							<div>
-								<p>
-									<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
-										ワイヤーフレーム
-									</a>
-								</p>
-								<p>
-									<a href="https://github.com/hideyov/techAcademy_chatAbout">
-										<img src="img/icons8-github-32.png" alt="gitHub">
-									</a>
-								</p>
-							</div>
-
 							<p>
-								<b>現在実装できておらず、将来的に実装を目指す機能：</b>
-								Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+								<a href="https://github.com/hideyov/techAcademy_chatAbout">
+									<img src="img/icons8-github-32.png" alt="gitHub">
+								</a>
 							</p>
+						</div>
 
-						</section>
-					</div>
-				</article>
-			</div><!-- .content-section #appli -->
-			<footer>
-				<article>
-					<p>
-						Copyright &copy; Hideyo Uesugi All Rights Reserved. 2019 Japan
-					</p>
-				</article>
-			</footer>
+						<p>
+							<b>現在実装できておらず、将来的に実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+						</p>
 
-		</div><!-- #contents -->
+					</section>
+				</div>
+			</article>
+		</div><!-- .content-section #appli -->
+
+
+		<div class="content-section">
+			<h2 id="movie" class="content-category">Movie</h2>
+			<article>
+				<h2>Movie <small>/ 動画</small></h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<p>
+							ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
+							将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
+							<br>
+							<a href="https://www.youtube.com/watch?time_continue=296&v=5a4_-Xza1LM">https://www.youtube.com/watch?time_continue=296&v=5a4_-Xza1LM</a>
+						</p>
+						<div>
+							<a href="https://www.youtube.com/watch?time_continue=296&v=5a4_-Xza1LM">
+								<img src="img/reed_fire.png" width="300" alt="">
+							</a>
+						</div>
+
+					</section>
+					<section class="detail col-sm-7">
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>使用言語：</b>
+							HTML, CSS, PHP<br>
+							<b>使用フレームワーク：</b>
+							Laravel, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年6月20日〜2019年7月7日<br>
+							<b>著作権：</b>
+							本動画の著作権は<b>山城茅葺株式会社</b>に属します。 <a href="https://yamashiro-kayabuki.co.jp/">https://yamashiro-kayabuki.co.jp/</a>
+						</p>
+
+						<div>
+							<p>
+								<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+									ワイヤーフレーム
+								</a>
+							</p>
+							<p>
+								<a href="https://github.com/hideyov/techAcademy_chatAbout">
+									<img src="img/icons8-github-32.png" alt="gitHub">
+								</a>
+							</p>
+						</div>
+
+						<p>
+							<b>現在実装できておらず、将来的に実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+						</p>
+
+					</section>
+				</div>
+			</article>
+			<article>
+				<h2>DTP <small>/ 投稿アプリ</small></h2>
+				<div class="row">
+					<section class="explain col-sm-5">
+						<p>
+							ログインした登録済みユーザがつぶやきを投稿する、原始的なツィッターのようなアプリケーションです。<br>
+							将来的には、設定したトピックごとにスレッドを立てて投稿できるようにしたいですが、その機能は、まだ実装できておりません。
+							<br>
+							<a href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
+						</p>
+						<div>
+							<a href="http://chat-about.herokuapp.com/">
+								<img src="img/chatAbout_scshot.png" width="300" alt="">
+							</a>
+						</div>
+
+					</section>
+					<section class="detail col-sm-7">
+						<p>
+							<b>実装した機能：</b>
+							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
+							<b>使用言語：</b>
+							HTML, CSS, PHP<br>
+							<b>使用フレームワーク：</b>
+							Laravel, Bootstrap<br>
+							<b>制作期間：</b>
+							2019年6月20日〜2019年7月7日<br>
+						</p>
+
+						<div>
+							<p>
+								<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+									ワイヤーフレーム
+								</a>
+							</p>
+							<p>
+								<a href="https://github.com/hideyov/techAcademy_chatAbout">
+									<img src="img/icons8-github-32.png" alt="gitHub">
+								</a>
+							</p>
+						</div>
+
+						<p>
+							<b>現在実装できておらず、将来的に実装を目指す機能：</b>
+							Laravel/Vue.js など、web開発に関する（設定済みの）トピックごとに投稿できる機能。<br>
+						</p>
+
+					</section>
+				</div>
+			</article>
+		</div><!-- .content-section #appli -->
+
+		<footer>
+			Copyright &copy; Hideyo Uesugi All Rights Reserved. 2019 Japan
+		</footer>
 
 	</div><!-- #container -->
 
