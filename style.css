@@ -102,7 +102,7 @@ article img {
 	border-radius: 8px;
 }
 
-.explain h3 {
+.explain h3, .detail h3 {
 	font-size: 0.8rem;
 	margin-top: 0;
 	margin-bottom: 3px;
@@ -110,7 +110,7 @@ article img {
 
 .explain .link {
 /*	margin-bottom: 6px;*/
-	line-height: 2.2;
+/*	line-height: 2.2;*/
 }
 
 footer {
