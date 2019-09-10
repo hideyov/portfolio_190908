@@ -1,0 +1,16 @@
+bootstrap3のnav-bar にはまった
+
+下記サイトの2に従い、div.navbar-header で囲むことで、スムーズに実現。
+6 の ul への navクラスと navbar-navクラスはつけずに、CSSでカスタマイズした。
+
+1. class属性に、navbar navbar-defaultを指定したnav要素を用意する。
+2. nav要素内に、class属性にnavbar-headerを指定したdiv要素と、collapse navbar-collapseを指定したdiv要素を配置する。
+3. 2でnavbar-headerを指定したdiv要素内に、button要素とa要素を配置する。
+4. 3で配置したbutton要素のclass属性にnavbar-toggle collapsedを指定、data-toggle属性にcollapseを指定する。更に、data-target属性に、collapse navbar-collapseを指定したdiv要素のid属性値（下記コードの場合navbarEexample）を指定。
+5. 3で配置したa要素のclass属性にnavbar-brandを指定する。a要素内には、ウェブサイトサイト名などのテキストを配置する。
+6. 2でcollapse navbar-collapseを指定したdiv要素には、id属性を指定。要素内には、class属性にnav navbar-navを指定したul要素を配置する。ul要素内に配置するli要素とa要素がメニュー項目となる。
+
+http://bootstrap3.cyberlab.info/components/navbar.html
+
+トップへのリンクは .navbar-brand をはずすと、カスタマイズが効く。
+しかし、上下のpadding/marginが、まだ合わない
