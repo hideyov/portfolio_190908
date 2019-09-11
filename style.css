@@ -52,10 +52,6 @@ html {
 }
 
 .logo {
-/*
-.logo,
-.logo:visited {
-*/
 	display: inline-block;
 	font-size: 1rem;
 	color: #ccc;
@@ -82,26 +78,16 @@ html {
 	font-size: 1.8rem;
 }
 
-.detail, .explain {
-	padding: 8px 30px;
-}
-
 article {
 	background-color: #cee;
 	border-radius: 8px;
 }
 
-article .content-title {
-	font-size: 1.6rem;
-	padding-top: 6px;
+.content-title {
+	font-size: 1.4rem;
+	padding-top: 12px;
 	padding-left: 12px;
 }
-
-/*
-article h1 small {
-	font-size: 1.2rem;
-}
-*/
 
 article p {
 	font-size: 0.8rem;
@@ -111,8 +97,20 @@ article img {
 	border-radius: 8px;
 }
 
+.detail, .explain {
+	padding: 8px 30px;
+}
+
+.detail a {
+	text-decoration: none;
+}
+
+.detail a:hover {
+	color: #09f;
+}
+
 .explain h3, .detail h3 {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin-top: 0;
 	margin-bottom: 8px;
 }
