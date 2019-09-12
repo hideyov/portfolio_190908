@@ -14,3 +14,14 @@ http://bootstrap3.cyberlab.info/components/navbar.html
 
 トップへのリンクは .navbar-brand をはずすと、カスタマイズが効く。
 しかし、上下のpadding/marginが、まだ合わない
+
+**************
+190913_trouble
+**************
+
+iPadで
+GLwebサイトに飛べない
+「エラー：このウェブページを表示中に問題が発生しました。このエラーが頻繁に表示される場合は、こちらのヒントをお試しください。」
+
+携帯（Android）で
+縦に持った時、Luminousが拡大し過ぎる！
