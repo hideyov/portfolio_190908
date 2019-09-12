@@ -23,3 +23,26 @@ $(document).ready(function() {
   });
 });
 
+/* jquery.vgrid.js の呼び出し */
+$(function () {
+	$('.grid-items ul').vgrid({
+		useLoadImageEvent:true,
+		fadeIn: {
+			time: 450,
+			delay: 60
+		}
+	});
+});
+
+/* luminous */
+
+//var luminousTrigger = document.querySelectorAll('.luminous');
+//if(luminousTrigger !== null) {
+//	new LuminousGallery(luminousTrigger);
+//}
+
+var luminousTrigger = document.querySelectorAll('.luminous');
+for (var i = 0; i < luminousTrigger.length; i++) {
+	var elem = luminousTrigger[i];
+	new Luminous(elem);
+}
