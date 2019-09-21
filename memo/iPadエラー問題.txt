@@ -1,0 +1,33 @@
+iPadで
+GLwebサイト（だけ）に飛べない
+「エラー：このウェブページを表示中に問題が発生しました。このエラーが頻繁に表示される場合は、こちらのヒントをお試しください。」
+
+190921
+
+URL間違いが判明！
+http://hideyov.sakura.ne.jp => http://www.hideyov.sakura.ne.jp に修正
+
+※しかし、PCやAndroidスマホではなぜ、問題なく表示できたのか？
+
+ところが、修正した index.html をアップロードして、chrome のキャッシュ削除しても問題解決せず！
+しかも iPad のfirebox/safari でも、やはりGLサイトだけ飛べない！
+
+chrome をアップデートしようとしたが、App Store で「"Chrome - Google のウェブブラウザはこのiPadと互換性がありません」
+
+chrome を削除してしまったので、iPad でchrome 使えず。
+
+iOSのアップデートを確認。=> iOS 9.3.5 お使いのソフトウェアは最新です。
+
+結局、機種が古すぎる（5年超え）ということですね。
+
+モデル：MD529J/A
+バージョン：9.3.5(13G36)
+容量：たぶん32GB
+
+sakuraサーバに、新たなフォルダを作成して　hideyov.sakura.ne.jp/hideyov_portfolio にアップロードしたが。。。。
+
+解決せず！！！！！！！！
+
+以下の修正をしても解決せず！！！
+http://www.hideyov.sakura.ne.jp/ => http://www.hideyov.sakura.ne.jp/index.html
+
