@@ -31,3 +31,39 @@ sakuraサーバに、新たなフォルダを作成して　hideyov.sakura.ne.jp
 以下の修正をしても解決せず！！！
 http://www.hideyov.sakura.ne.jp/ => http://www.hideyov.sakura.ne.jp/index.html
 
+********
+190923
+********
+
+問題は、当該のURLにあるのか、そのURLを埋め込んだHTML上の場所にあるのかを確認するため、www.gernm.com に差し替え。
+また、当該のURL を含む article を後方にもコピーしてみたが。。。 <a href="http://www.hideyov.sakura.ne.jp/">
+
+www.gernm.com は表示される。
+しかし www.hideyov.sakura.ne.jp は表示されず。
+iPad Firefox では真っ白で非表示のまま。
+safari では「問題が置きたため、このwebページを再度読み込みました。」=> "http://www.hideyov.sakura.ne.jp/"で問題が繰り返し起きました。
+
+*******
+結論
+*******
+キャッシュの削除、safariとfirefoxのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、 http://www.hideyov.sakura.ne.jp のみ、アクセスできない。
+chromeをアンインストールして、再度app.store から入手しようとしたが、
+chrome をアップデートしようとしたが、App Store で「"Chrome - Google のウェブブラウザはこのiPadと互換性がありません」
+
+iOSのアップデート確認：=> iOS 9.3.5 お使いのソフトウェアは最新です。
+
+結局、機種が古すぎる（5年超え）ということで、chrome での動作確認するためには、iOS10 以上に対応したiPhoneかなんかを買うしかない。
+
+****
+参考
+****
+
+iPod touch5世代を中古で買いました。アプリを入れたいのですがios10.0必要と書かれていたので、アップデートしようとソフトウェアアップデートを開いたところ【ios9.3.5 お使いのソフトウェアは最新です⠀】と出てきました。
+どのようにすればios10.0になりますか？
+
+第五世代は iOS 9.3.5が最終、すなわちiOS10はインストール不可です。もしそのアプリがiOS10が必須なら、それもインストールできない。第六世代を買えば最新のiOS12も入ります。
+https://discussionsjapan.apple.com/thread/250280326
+
+****
+
+****
