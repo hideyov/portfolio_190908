@@ -56,6 +56,8 @@ navbar
 .navbar {
 	background-color: #333;
 	border-width: 0;
+	padding: 7px 5px 8px 5px;
+	margin-bottom: 30px;
 }
 
 /* navigation bar RWD対応 */
@@ -77,12 +79,14 @@ navbar
 }
 
 .navbar a, .navbar a:visited {
-	color: #ccc;
+	color: #cccccc;
 	text-decoration: none;
 }
 
 .navbar a:hover {
-	color: #6cc;
+	color: #ccffff;
+	transform: scale(1.15);
+	transition-duration: 0.2s;
 }
 
 .logo {
@@ -99,6 +103,13 @@ navbar
 	text-decoration: none;
 }
 
+/* container */
+
+/*
+.container {
+}
+*/
+
 /* content-section */
 
 .content-section {
@@ -106,7 +117,7 @@ navbar
 }
 
 .content-category {
-	padding-top: 60px;
+	padding-top: 75px;
 	color: #cceeee;
 	font-size: 1.8rem;
 }
@@ -234,12 +245,6 @@ footer {
 	content: "\f078";
 }
 
-/*
-.navAccordion > dt.open {
-	background-color: #00aaff;
-}
-*/
-
 .navAccordion > dt.open::after {
 	content: "\f077";
 }
@@ -248,10 +253,32 @@ footer {
 	border-top: none;
 }
 
+.navAccordion > dt.open {
+	background-color: #00aaff;
+}
+
+.navAccordion > dt:not(.open) {
+	background-color: #009c8f;
+}
+
 .navAccordion > dd {
 	border-left: solid 1px #eeeeee;
 	border-right: solid 1px #eeeeee;
 	background-color: #eeffff;
 	color: #333333;
 	padding: 10px 12px 2px 12px;
+}
+
+/* 現在位置を表す li > a の色を変える */
+
+.nav-link {
+	display: inline-block;
+	height: 20px;
+}
+
+.nav-link.ahora {
+	color: #66cccc;
+	transform: scale(1.15);
+	padding-right: 5px;
+	padding-left: 5px;
 }
