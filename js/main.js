@@ -46,3 +46,29 @@ for (var i = 0; i < luminousTrigger.length; i++) {
 	var elem = luminousTrigger[i];
 	new Luminous(elem);
 }
+
+/* accordion menu */
+
+$(function() {
+	var flg = 0;
+	$('.navAccordion > dd').hide();
+	$('.navAccordion > dt').on('click keyaction.enter', function() {
+		if(flg) {
+			return false;
+		}
+		flg = 1;
+		$(this).toggleClass('open');
+		$(this).next().slideToggle(function() {
+			flg = 0;
+		});
+		return false;
+	});
+	// フォーカス時にenterキーを押すとactiveイベントが発火するようにする
+	// これにより、Tabキーでの移動とenterキーで操作が可能となる
+	$('navAccordion > dt').on('keydown', function(event) {
+		var keyCode = event.keyCode || e.which;
+		if (keyCode === 13) {
+			$(this).trigger('keyaction.enter');
+		}
+	});
+});

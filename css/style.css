@@ -2,7 +2,7 @@
 
 body {
 	max-width: 1100px;
-	background-color: #0af;
+	background-color: #00aaff;
 	margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@ html {
 }
 
 * {
-	color: #699;
+	color: #669999;
 	line-height: 1.5;
 }
 
@@ -107,7 +107,7 @@ navbar
 
 .content-category {
 	padding-top: 60px;
-	color: #cee;
+	color: #cceeee;
 	font-size: 1.8rem;
 }
 
@@ -120,7 +120,7 @@ navbar
 /* article */
 
 article {
-	background-color: #cee;
+	background-color: #cceeee;
 	border-radius: 8px;
 }
 
@@ -205,4 +205,53 @@ footer {
 .git_vertical_adjust {
 	display: inline-block;
 	margin-top: -8px;
+}
+
+/* accordion menu - アコーディオンメニュー */
+.navAccordion > dt, 
+.navAccordion > dd {
+	background-color: #009c8f;
+	border-top: 1px solid #ffffff;
+} 
+
+.navAccordion > dt {
+	position: relative;
+	padding: 8px 16px;
+	color: #cceeee;
+	cursor: pointer;
+	outline: none;
+}
+
+.navAccordion > dt:focus {
+	background-color: #00aaff;
+}
+
+.navAccordion > dt::after {
+	position: absolute;
+	top: 0.6rem;
+	right: 15px;
+	font-family: FontAwesome;
+	content: "\f078";
+}
+
+/*
+.navAccordion > dt.open {
+	background-color: #00aaff;
+}
+*/
+
+.navAccordion > dt.open::after {
+	content: "\f077";
+}
+
+.navAccordion > dt:first-child {
+	border-top: none;
+}
+
+.navAccordion > dd {
+	border-left: solid 1px #eeeeee;
+	border-right: solid 1px #eeeeee;
+	background-color: #eeffff;
+	color: #333333;
+	padding: 10px 12px 2px 12px;
 }
