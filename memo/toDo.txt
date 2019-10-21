@@ -1,0 +1,31 @@
+*******
+191022
+*******
+
+portfolio site
+	サイトの特性に「レスポンシブ対応」追記
+	google font再考
+	LumunousからLightbox or Color Boxに変更（スマホ縦置き時の対応）
+	history APIでブラウザ上の「戻る」が使えるように
+	
+Hideyov56
+	配色決定
+	固定ページからの、各カテゴリーへのリンク
+	固定ページのアイキャッチ画像のheightを低くする
+	個別ページのpaginationリンクのデザイン
+	heightが高いアイキャッチ画像を調整（一覧が揃って見えるように）
+	
+Geronimo Label
+	スライダー（カルーセル）プラグイン slick導入
+	スマホでの画像拡大、もう少し効かせる（%調整？）
+	背景画像のパターン作成
+	配色変更
+	フォーム（メールが届くように）
+	フォームのバリデーション
+	ルーティング
+	
+Yuko Uchida
+	LumunousからLightbox or Color Boxに変更（スマホ縦置き時の対応）
+	画像の拡大から戻す方法は？
+	
+	
