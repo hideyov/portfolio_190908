@@ -85,10 +85,19 @@ navbar
 	text-decoration: none;
 }
 
+.navbar a:visited {
+/*
+	padding-right: 5px;
+	padding-left: 5px;
+*/
+}
+
 .navbar a:not(.logo):hover {
 	color: #ccffff;
 	transform: scale(1.15);
 	transition-duration: 0.2s;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .logo {
@@ -187,7 +196,7 @@ vgrid (tileレイアウト)
 
 .grid-items ul li {
 	list-style-type: none;
-	margin: 15px 10px 5px 5px;
+	margin: 15px 24px 10px 5px;
 }
 
 /* DTPの画像はborder-radius ゼロに */
@@ -242,7 +251,6 @@ footer {
 
 .navAccordion > dt:hover {
 	color: #ffffff;
-	font-size: 1rem;
 	transition-duration: 0.2s;
 }
 
