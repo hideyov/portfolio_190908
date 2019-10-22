@@ -7,6 +7,8 @@ portfolio site
 	google font再考
 	LumunousからLightbox or Color Boxに変更（スマホ縦置き時の対応）
 	history APIでブラウザ上の「戻る」が使えるように
+	cssのキャッシュ対応
+	画像遅延読み込み
 	
 Hideyov56
 	配色決定
@@ -23,9 +25,13 @@ Geronimo Label
 	フォーム（メールが届くように）
 	フォームのバリデーション
 	ルーティング
+	cssのキャッシュ対応
+	画像遅延読み込み
 	
 Yuko Uchida
 	LumunousからLightbox or Color Boxに変更（スマホ縦置き時の対応）
 	画像の拡大から戻す方法は？
+	cssのキャッシュ対応
+	画像遅延読み込み
 	
 	
