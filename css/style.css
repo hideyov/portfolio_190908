@@ -286,7 +286,7 @@ footer {
 	padding: 10px 12px 2px 12px;
 }
 
-/* 現在位置を表す li > a の色を変える */
+/* 現在位置を表す li の色を変える */
 
 .nav-link {
 	display: inline-block;
@@ -294,7 +294,7 @@ footer {
 }
 
 .nav-link.ahora {
-	color: #66cccc;
+	color: #00ffff;
 	transform: scale(1.15);
 	padding-right: 5px;
 	padding-left: 5px;

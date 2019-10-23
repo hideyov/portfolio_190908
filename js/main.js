@@ -73,7 +73,7 @@ $(function() {
 	});
 });
 
-/* 現在位置を表すナビゲーションの li > aの色を変える */
+/* 現在位置を表すナビゲーションの li aの色を変える */
 
 $(function() {
 	$('.nav-link').on('click', function() {

@@ -9,6 +9,6 @@ Yummy FTP pro でさくらサーバーにSSH接続する
 pw: if8vue56js
 
 ポート：22(パッシブFTPを使用)
-初期フォルダ：/home/hideyov/www
+初期フォルダ：/home/hideyov/www/portfolio
 ローカルパス： ~/bitBucket_eje/imagicaDigitalScape_portfolio_190920
 SSHキー： ~/.ssh/id_rsa.pub
