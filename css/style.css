@@ -315,3 +315,8 @@ footer {
 	margin-top: -6px;
 	margin-bottom: 8px;
 }
+
+/* lightbox 2 */
+img.lb-image {
+	border: none;
+}

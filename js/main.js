@@ -37,15 +37,10 @@ $(function () {
 /* luminous */
 
 //var luminousTrigger = document.querySelectorAll('.luminous');
-//if(luminousTrigger !== null) {
-//	new LuminousGallery(luminousTrigger);
+//for (var i = 0; i < luminousTrigger.length; i++) {
+//	var elem = luminousTrigger[i];
+//	new Luminous(elem);
 //}
-
-var luminousTrigger = document.querySelectorAll('.luminous');
-for (var i = 0; i < luminousTrigger.length; i++) {
-	var elem = luminousTrigger[i];
-	new Luminous(elem);
-}
 
 /* accordion menu */
 
