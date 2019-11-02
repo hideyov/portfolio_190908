@@ -75,6 +75,9 @@ $(function() {
 		$('.nav-link').removeClass('ahora');
 		$(this).addClass('ahora');
 	});
+	$('#logo').on('click', function() {
+		$('.nav-link').removeClass('ahora');
+	})
 });
 
 /* hover時、SNSとGithubロゴのopacity調整 */

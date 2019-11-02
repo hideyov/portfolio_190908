@@ -9,10 +9,12 @@
 	<!-- lightbox2 css -->
 	<link rel="stylesheet" href="js/lightbox2/css/lightbox.css">
 	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">-->
-	<link rel="stylesheet" href="css/style.css?m-date=201911021601">
+	<link rel="stylesheet" href="css/style.css?m-date=201911022049">
 	<link rel="stylesheet" href="css/luminous-basic.min.css">
+	<!--
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mansalva|Special+Elite&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kanit:400i&display=swap" rel="stylesheet">
+-->
+	<link href="https://fonts.googleapis.com/css?family=Kanit:400,400i&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/4e5eb2ce7f.js" crossorigin="anonymous"></script>
 	<title>Hideyo Uesugi / Portfolio</title>
 </head>
@@ -23,11 +25,11 @@
 
 		<nav class="navbar navbar-default navbar-expand-md bg-dark navbar-fixed-top">
 			<div class="navbar-header">
-				<a href="#profile" class="logo">Hideyo Uesugi / Portfolio</a>
+				<a href="#profile" id="logo">Hideyo Uesugi Portfolio</a>
 				<!-- 横幅が狭い時に出るハンバーガーボタン -->
 				<div id="navDrawrBtn">
 					<span class="menu">menu</span>
-					<i class="far fa-window-close fa-lg nav-gray"></i>
+					<i class="far fa-window-close nav-gray"></i>
 				</div>
 			</div><!-- .navbar-header -->
 
@@ -35,7 +37,7 @@
 				<!--				<ul class="navbar-nav">-->
 				<ul>
 					<li><a class="nav-link" href="#web">web site</a></li>
-					<li><a class="nav-link" href="#appli">application</a></li>
+					<li><a class="nav-link" href="#appli">app</a></li>
 					<li><a class="nav-link" href="#dtp">dtp</a></li>
 					<li><a class="nav-link" href="#movie">movie</a></li>
 				</ul>
@@ -122,7 +124,7 @@
 									<span class="comment">SublimeText/Brackets/Vimなど使用エディターの設定、Macの .profileなどの環境設定ファイルを管理。</span>
 								</div>
 
-								<div>
+								<div style="margin-bottom: 6px;">
 									<a href="https://www.instagram.com/hideyovic/"><img class="sns_adjust" src="img/prof/Instagram_AppIcon_Aug2017.png" width="22" alt="hideyov instagram" title="hideyov instagram"></a>
 									<a href="https://twitter.com/hideyovic_ge"><img class="sns_adjust" src="img/prof/twitter_logo.png" width="22" alt="hideyovic twitter" title="hideyovic twitter"></a>
 								</div>
@@ -169,7 +171,7 @@
 							<dd>
 								<p>
 									<b>使用言語：</b>
-									HTML, CSS, JavaScript<br>
+									HTML5, CSS3, JavaScript<br>
 									<b>使用ライブラリー、スクリプト：</b>
 									jQuery, Bootstrap, Luminous, jquery.vgrid.min.js<br>
 									<b>使用ソフト：</b>
@@ -178,9 +180,11 @@
 									2019年9月6日〜2019年9月21日<br>
 								</p>
 							</dd>
-							<dt tabindex="0">確認した不具合</dt>
+							<dt tabindex="0">直面した不具合</dt>
 							<dd>
-								<p>Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。これがLuminousスクリプトのバグによるものなのか、まだ確認できていない。 </p>
+								<p>
+									DTP作例の画像拡大には、jQueryを使わない軽量スクリプトである"Luminous"を使用したが、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。これがLuminousスクリプトのバグによるものなのか、確認できないため、jQueryプラグインのLightbox2に変更した。
+								</p>
 							</dd>
 							<dt tabindex="0">実装したい機能</dt>
 							<dd>
@@ -236,19 +240,19 @@
 							<dd>
 								<p>
 									<b>使用言語：</b>
-									HTML, CSS, JavaScript<br>
+									HTML5, CSS3, JavaScript<br>
 									<b>使用ライブラリー、スクリプト：</b>
-									jQuery, Bootstrap, Luminous, jquery.vgrid.min.js<br>
+									jQuery, Bootstrap, Lightbox2, jquery.vgrid.min.js<br>
 									<b>使用ソフト：</b>
 									Photoshop, Illustrator, Brackets<br>
 									<b>制作期間：</b>
 									2019年9月17日〜2019年9月22日<br>
 								</p>
 							</dd>
-							<dt tabindex="0">確認した不具合</dt>
+							<dt tabindex="0">直面した不具合</dt>
 							<dd>
 								<p>
-									Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。これがLuminousスクリプトのバグによるものなのか、まだ確認できていない。
+									DTP作例の画像拡大には、jQueryを使わない軽量スクリプトである"Luminous"を使用したが、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。これがLuminousスクリプトのバグによるものなのか、確認できないため、jQueryプラグインのLightbox2に変更した。
 								</p>
 							</dd>
 							<dt tabindex="0">更新記録</dt>
@@ -284,7 +288,7 @@
 							<dd>
 								<p>
 									<b>WordPressで構築した個人ブログ：</b>
-									制作開始以前の日付の記事は、2006年より運営しているブログ <a class="url-of-works" href="http://www.musicadeira.com/blogvic/">「勝つ時だってあるだろう」</a> および、Facebookへの投稿より転載した。
+									制作開始以前の日付の記事は、2006年より運営しているブログ <a class="url-of-works" href="https://www.musicadeira.com/blogvic/">「勝つ時だってあるだろう」</a> および、Facebookへの投稿より転載した。
 								</p>
 							</dd>
 							<dt tabindex="0">使用言語、ライブラリー</dt>
@@ -293,7 +297,7 @@
 									<b>CMS：</b>
 									WordPress<br>
 									<b>使用言語：</b>
-									HTML, CSS, PHP, JavaScript<br>
+									HTML5, CSS3, PHP, JavaScript<br>
 									<b>使用ライブラリー、スクリプト：</b>
 									jQuery<br>
 									<b>使用ソフト：</b>
@@ -344,11 +348,11 @@
 									また、同じ形式での記載を繰り返すライブ情報の部分には、Vue.jsのコンポーネント機能を利用し、サイトの維持・運営が楽に行えるようにした。
 								</p>
 							</dd>
-							<dt tabindex="0">使用言語、ライブラリー</dt>
+							<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
 							<dd>
 								<p>
 									<b>使用言語：</b>
-									HTML, CSS, JavaScript<br>
+									HTML5, CSS3, JavaScript<br>
 									<b>使用ライブラリー：</b>
 									jQuery, Bootstrap<br>
 									<b>使用フレームワーク：</b>
@@ -359,12 +363,13 @@
 									2019年8月5日〜2019年8月12日<br>
 								</p>
 							</dd>
-							<dt tabindex="0">確認した不具合</dt>
+							<dt tabindex="0">直面した不具合</dt>
 							<dd>
 								<p>
-									<b>確認した不具合（2019年9月23日現在）</b><br>
-									iPad(<b>iOS 9.3.5</b>)で閲覧した時、Google Chrome、safari、firefox いずれで閲覧しても、サイトにアクセスできない。キャッシュの削除、各ブラウザのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、 http://www.hideyov.sakura.ne.jp のみ、アクセスできない。<br>
-									iPhone 7(<b>iOS 12</b>)では問題なくアクセスできたため、<b>iOS 9.3.5 固有の不具合</b>と思われる。
+									<b>iOS 9.3.5のデバイスで閲覧できない（2019年9月23日現在）</b><br>
+									iPad(<b>iOS 9.3.5</b>)で閲覧した時、Google Chrome、safari、firefox いずれで閲覧しても、「問題が置きたため、このwebページを再度読み込みました。」等のエラーメッセージが出て、読み込めなかった。<br>
+									キャッシュの削除、各ブラウザのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、当サイトのみ、表示できない。<br>
+									iPhone 7(<b>iOS 12</b>)では問題なく表示されたため、<b>iOS 9.3.5 固有の不具合</b>ではないかと思われる。あるいは<b>Vue.jsとiOS 9.3.5の相性</b>の問題もあるのかどうか、現時点では調査方法さえもわからない。
 								</p>
 							</dd>
 							<dt tabindex="0">実装したい機能</dt>
@@ -405,35 +410,56 @@
 							原始的ツィッターのような投稿アプリケーション
 						</h3>
 						<p>
-							<a class="url-of-works" class="link" href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
-						</p>
-						<p>
-							<b>実装した機能：</b>
-							ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能<br>
-							<b>使用言語：</b>
-							HTML, CSS, PHP<br>
-							<b>使用ライブラリー：</b>
-							jQuery, Bootstrap<br>
-							<b>使用フレームワーク：</b>
-							Laravel<br>
-							<b>制作期間：</b>
-							2019年6月20日〜2019年7月7日<br>
+							<a class="url-of-works" href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
 						</p>
 
-						<div>
-							<p>
-								<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git_adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
-								&nbsp;&nbsp;/&nbsp;
-								<a class="url-of-works" href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
-									ワイヤーフレーム <small>(Cacoo使用)</small>
-								</a>
-							</p>
-						</div>
-
-						<p>
-							<b>実装したい機能：</b>
-							"Laravel", "Vue.js" など、web開発に関する（設定済みの）トピックごとに投稿できる機能。
-						</p>
+						<dl class="navAccordion">
+							<dt tabindex="0">このサイトについて</dt>
+							<dd>
+								<p>
+									<b>実装した機能：</b>
+									ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能
+								</p>
+							</dd>
+							<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
+							<dd>
+								<p>
+									<b>使用言語：</b>
+									HTML5, CSS3, PHP<br>
+									<b>使用ライブラリー：</b>
+									jQuery, Bootstrap<br>
+									<b>使用フレームワーク：</b>
+									Laravel<br>
+									<b>使用ソフト：</b>
+									Photoshop, Illustrator, Brackets<br>
+									<b>制作期間：</b>
+									2019年6月20日〜2019年7月7日<br>
+								</p>
+							</dd>
+							<dt tabindex="0">Github、ワイヤーフレーム</dt>
+							<dd>
+								<p>
+									<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git_adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
+									<br>
+									<a class="url-of-works" href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+										ワイヤーフレーム <small>(Cacoo使用)</small>
+									</a>
+								</p>
+							</dd>
+							<dt tabindex="0">実装したい機能</dt>
+							<dd>
+								<p>
+									"Laravel", "Vue.js" など、web開発に関する（設定済みの）トピックごとに投稿できる機能。	
+								</p>
+							</dd>
+<!--
+							<dt tabindex="0">更新記録</dt>
+							<dd>
+								<p>
+								</p>
+							</dd>
+-->
+						</dl>
 
 					</section>
 				</div>
@@ -635,7 +661,7 @@
 							<b>使用ソフト：</b>
 							Adobe Premiere Pro, Adobe Flash Professional<br>
 							<b>著作権：</b>
-							本動画の著作権は<b>Geronimo Label</b>に属します。 <a class="url-of-works" href="http://www.gernm.com">http://www.gernm.com</a>
+							本動画の著作権は<b>Geronimo Label</b>に属します。 <a class="url-of-works" href="https://www.gernm.com">https://www.gernm.com</a>
 						</p>
 					</section>
 				</div>
@@ -692,7 +718,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
 	<script src="js/luminous.min.js"></script>
-	<script src="js/main.js?m-date=201910282047"></script>
+	<script src="js/main.js?m-date=201911022039"></script>
 	<script src="js/lightbox2/js/lightbox.min.js"></script>
 </body>
 
