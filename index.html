@@ -4,13 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/4e5eb2ce7f.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- lightbox2 css -->
 	<link rel="stylesheet" href="js/lightbox2/css/lightbox.css">
 	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">-->
-	<link rel="stylesheet" href="css/style.css?m-date=201910282047">
+	<link rel="stylesheet" href="css/style.css?m-date=201911021601">
 	<link rel="stylesheet" href="css/luminous-basic.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mansalva|Special+Elite&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:400i&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/4e5eb2ce7f.js" crossorigin="anonymous"></script>
 	<title>Hideyo Uesugi / Portfolio</title>
 </head>
@@ -23,20 +25,19 @@
 			<div class="navbar-header">
 				<a href="#profile" class="logo">Hideyo Uesugi / Portfolio</a>
 				<!-- 横幅が狭い時に出るハンバーガーボタン -->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+				<div id="navDrawrBtn">
+					<span class="menu">menu</span>
+					<i class="far fa-window-close fa-lg nav-gray"></i>
+				</div>
 			</div><!-- .navbar-header -->
 
-			<div id="nav-bar" class="collapse navbar-collapse">
+			<div id="nav-bar">
 				<!--				<ul class="navbar-nav">-->
 				<ul>
-					<li class="nav-item"><a class="nav-link" href="#web">web site</a></li>
-					<li class="nav-item"><a class="nav-link" href="#appli">application</a></li>
-					<li class="nav-item"><a class="nav-link" href="#dtp">dtp</a></li>
-					<li class="nav-item"><a class="nav-link" href="#movie">movie</a></li>
+					<li><a class="nav-link" href="#web">web site</a></li>
+					<li><a class="nav-link" href="#appli">application</a></li>
+					<li><a class="nav-link" href="#dtp">dtp</a></li>
+					<li><a class="nav-link" href="#movie">movie</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
@@ -48,27 +49,29 @@
 			<article>
 				<h2 class="content-title">Hideyo Uesugi</h2>
 				<div class="row">
-					<div class="explain col-sm-3">
+					<div class="explain col-sm-4">
 						<img src="img/prof/190628_forSlack.jpg" width="120" alt="Hideyo Uesugi">
-						<div>
-							<a href="https://github.com/hideyov/">Github <img class="git_vertical_adjust" src="img/prof/icons8-github-32.png" width="27" alt="gitHub"></a>
-							<p class="comment">
-								SublimeText/Brackets/Vimなど使用エディターの設定、Macの .profileなどの環境設定ファイルを管理。
-							</p>
-						</div>
 
-						<div>
-							<a href="https://www.instagram.com/hideyovic/">instagram&nbsp; <img class="git_vertical_adjust" src="img/prof/Instagram_AppIcon_Aug2017.png" width="24" alt="instagram"></a>
-						</div>
+						<dl class="navAccordion bio">
+							<dt tabindex="0">Bio</dt>
+							<dd>
+								<p>
+									<small>
+										1963年滋賀県生まれ。
+										<br>
+										1981年、広島修道高校卒業。
+										<br>
+										1981年、京都大学理学部生物学科入学。1988年卒業。
+										<br>
+										1989年から2019年に至るまで、運送会社、茅ぶき屋根工事現場の助手、インターネット・メディア、空港での機内清掃などの仕事を渡り歩く。
+									</small>
+								</p>
+							</dd>
+						</dl>
+
 					</div>
-					<div class="detail col-sm-9">
+					<div class="detail col-sm-8">
 
-						<h3 class="title-of-works">
-							Bio
-						</h3>
-						<p>
-							1963年滋賀県生まれ。1981年、広島修道高校卒業。1981年、京都大学理学部生物学科入学。1988年卒業。1989年から2019年に至るまで、運送会社、茅ぶき屋根工事のアシスタント、インターネット・メディア、空港での機内清掃などの仕事を渡り歩く。
-						</p>
 						<dl class="navAccordion">
 							<dt tabindex="0">Web</dt>
 							<dd>
@@ -93,7 +96,9 @@
 							<dt tabindex="0">語学・web関連資格</dt>
 							<dd>
 								<p>
-									2005年11月　中国語検定3級 / 2008年6月　ビジネススペイン語検定3級
+									2005年11月　中国語検定3級
+									<br>
+									2008年6月　ビジネススペイン語検定3級
 									<br>
 									2013年11月　画像処理エンジニア検定エキスパート(CG-Arts協会)
 									<br>
@@ -101,6 +106,26 @@
 									<br>
 									2017年9月　HTML5プロフェッショナル認定試験レベル1
 								</p>
+							</dd>
+						</dl>
+
+						<dl class="navAccordion">
+							<dt tabindex="0" class="sns_logos">
+								<span class="sns_logo_mono">
+									<img src="img/prof/github_transparent_mono.png" width="22" alt=""><img src="img/prof/instagram_logo_transparent_mono.png" class="sns_mono_adjust" width="16" alt=""><img src="img/prof/twitter_transparent_mono.png" class="sns_mono_adjust" width="16" alt="">
+								</span>
+								SNS / Github
+							</dt>
+							<dd>
+								<div>
+									<a href="https://github.com/hideyov/">Github <img class="git_adjust" src="img/prof/icons8-github-32.png" width="27" alt="hideyov gitHub" title="hideyov gitHub"></a>
+									<span class="comment">SublimeText/Brackets/Vimなど使用エディターの設定、Macの .profileなどの環境設定ファイルを管理。</span>
+								</div>
+
+								<div>
+									<a href="https://www.instagram.com/hideyovic/"><img class="sns_adjust" src="img/prof/Instagram_AppIcon_Aug2017.png" width="22" alt="hideyov instagram" title="hideyov instagram"></a>
+									<a href="https://twitter.com/hideyovic_ge"><img class="sns_adjust" src="img/prof/twitter_logo.png" width="22" alt="hideyovic twitter" title="hideyovic twitter"></a>
+								</div>
 							</dd>
 						</dl>
 					</div>
@@ -113,7 +138,7 @@
 			<h2 id="web" class="content-category">Web Site</h2>
 
 			<article>
-				<h2 class="content-title">Hideyo Uesugi /Portfolio</h2>
+				<h2 class="content-title">Hideyo Uesugi / Portfolio</h2>
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/portfolio/">
@@ -259,7 +284,7 @@
 							<dd>
 								<p>
 									<b>WordPressで構築した個人ブログ：</b>
-									制作開始以前の日付の記事は、2006年より運営しているブログ <a href="http://www.musicadeira.com/blogvic/">「勝つ時だってあるだろう」</a> および、Facebookへの投稿より転載した。
+									制作開始以前の日付の記事は、2006年より運営しているブログ <a class="url-of-works" href="http://www.musicadeira.com/blogvic/">「勝つ時だってあるだろう」</a> および、Facebookへの投稿より転載した。
 								</p>
 							</dd>
 							<dt tabindex="0">使用言語、ライブラリー</dt>
@@ -295,7 +320,7 @@
 			</article>
 
 			<article>
-				<h2 class="content-title">Geronimo Label</h2>
+				<h2 class="content-title">Geronimo Label official site</h2>
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/gernm/">
@@ -355,7 +380,7 @@
 									<br>
 									<b>ナビゲーションの実装：</b>bootstrapデフォルトのナビゲーションから、jQueryで独自に組んだナビゲーションに変更。<small>(2019.10.28)</small>
 								</p>
-								
+
 							</dd>
 						</dl>
 
@@ -397,9 +422,9 @@
 
 						<div>
 							<p>
-								<a href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git_vertical_adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
+								<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git_adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
 								&nbsp;&nbsp;/&nbsp;
-								<a href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+								<a class="url-of-works" href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
 									ワイヤーフレーム <small>(Cacoo使用)</small>
 								</a>
 							</p>
@@ -580,7 +605,7 @@
 							<b>使用ソフト：</b>
 							Adobe Premiere Pro<br>
 							<b>著作権：</b>
-							本動画の著作権は<b>山城萱葺株式会社</b>に属します。 <a href="https://yamashiro-kayabuki.co.jp/">https://yamashiro-kayabuki.co.jp/</a>
+							本動画の著作権は<b>山城萱葺株式会社</b>に属します。 <a class="url-of-works" href="https://yamashiro-kayabuki.co.jp/">https://yamashiro-kayabuki.co.jp/</a>
 						</p>
 					</section>
 				</div>
@@ -590,7 +615,7 @@
 				<h2 class="content-title">MV「村に戻る気はねぇんだ」</h2>
 				<div class="row">
 					<div class="explain col-sm-5">
-						<a href="https://www.youtube.com/watch?v=XjsVFtD83FM">
+						<a class="url-of-works" href="https://www.youtube.com/watch?v=XjsVFtD83FM">
 							<img class="fluid_img" src="img/mura_hongkong.png" alt="geronimo label">
 						</a>
 					</div>
@@ -610,7 +635,7 @@
 							<b>使用ソフト：</b>
 							Adobe Premiere Pro, Adobe Flash Professional<br>
 							<b>著作権：</b>
-							本動画の著作権は<b>Geronimo Label</b>に属します。 <a href="http://www.gernm.com">http://www.gernm.com</a>
+							本動画の著作権は<b>Geronimo Label</b>に属します。 <a class="url-of-works" href="http://www.gernm.com">http://www.gernm.com</a>
 						</p>
 					</section>
 				</div>
@@ -639,7 +664,7 @@
 							<b>使用ソフト：</b>
 							Adobe Premiere Pro<br>
 							<b>著作権：</b>
-							本動画の著作権は<b>IWJ</b>に属します。 <a href="https://iwj.co.jp/wj/open/archives/420220">https://iwj.co.jp/wj/open/archives/420220</a>
+							本動画の著作権は<b>IWJ</b>に属します。 <a class="url-of-works" href="https://iwj.co.jp/wj/open/archives/420220">https://iwj.co.jp/wj/open/archives/420220</a>
 						</p>
 
 					</section>

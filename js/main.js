@@ -76,3 +76,48 @@ $(function() {
 		$(this).addClass('ahora');
 	});
 });
+
+/* hover時、SNSとGithubロゴのopacity調整 */
+$(function() {
+	$('.sns_logos').on('mouseover', function() {
+		$('.sns_logo_mono').css('opacity', 1);	
+	});
+	$('.sns_logos').on('mouseout', function() {
+		$('.sns_logo_mono').css('opacity', 0.8);	
+	});
+});
+
+/* 767px 以下でのDrawer Menu */
+//$(function() {
+//	$('#navDrawrBtn').on('click', function() {
+//		$('#nav-bar ul').css('top', '60px');	
+//	});
+//});
+
+$(function () {
+//	var $mainNav = $('.nav-menu');
+//	var $navBtn = $('navDrawrBtn button');
+//	var $speed = 300;
+//	var $mainNavWidth = 120;
+	$('.fa-window-close').addClass('close-menu');
+	$('#navDrawrBtn .menu').addClass('close-menu');
+	
+	$('#navDrawrBtn').on('click', function () {
+		drawerFunc();
+	});
+
+	function drawerFunc() {
+		if ($('#nav-bar ul').hasClass('menuOpen')) {
+//			$('#navDrawrBtn').text('Menu');
+			$('#nav-bar ul').removeClass('menuOpen');
+			$('.fa-window-close').addClass('close-menu');
+			$('#navDrawrBtn .menu').addClass('close-menu');
+			//			$mainNav.animate({right: -1*$mainNavWidth}, $speed, 'swing');
+		} else {
+			$('#nav-bar ul').addClass('menuOpen');
+			$('.fa-window-close').removeClass('close-menu');
+			$('#navDrawrBtn .menu').removeClass('close-menu');
+//			$('#navDrawrBtn').text('close');
+		}
+	}
+});

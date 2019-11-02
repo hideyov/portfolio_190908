@@ -2,7 +2,8 @@
 
 body {
 	max-width: 1100px;
-	background-color: #00aaff;
+/*	background-color: #00696f;*/
+	background-color: #147073;
 	margin: 0 auto;
 }
 
@@ -11,8 +12,10 @@ html {
 }
 
 * {
-	color: #669999;
-	line-height: 1.5;
+/*	color: #669999;*/
+/*	color: #cccccc;*/
+	color: #accccc;
+	line-height: 1.4;
 }
 
 .hidden {
@@ -54,12 +57,15 @@ navbar
 ********/
 
 .navbar {
-	font-family: 'Monda', sans-serif;
-	background-color: #333;
+/*	font-family: 'Monda', sans-serif;*/
+	font-family: 'Kanit', sans-serif;
+/*	background-color: #00494f;*/
+	background-color: #333333;
 	border-width: 0;
 	font-size: 1rem;
 	padding: 7px 5px 8px 5px;
 	margin-bottom: 30px;
+	border-bottom: solid 4px #147073;
 }
 
 /* navigation bar RWD対応 */
@@ -81,7 +87,7 @@ navbar
 }
 
 .navbar a, .navbar a:visited {
-	color: #cccccc;
+	color: #accccc;
 	text-decoration: none;
 }
 
@@ -114,12 +120,91 @@ navbar
 	text-decoration: none;
 }
 
-/* container */
+/* 767px以下ではメニューを、左端に展開 */
 
-/*
-.container {
+.navbar-header {
+	position: relative;
 }
+
+@media (min-width: 768px) {
+	#navDrawrBtn {
+		display: none;
+	}
+	.fa-window-close {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		height: 62px;
+	}
+	
+	#navDrawrBtn {
+		position: fixed;
+		right: 28px;
+		top: 20px;
+	}
+	
+	#navDrawrBtn:hover {
+		cursor: pointer;
+	}
+	
+	.menu {
+		color: #cccccc;
+	}
+	
+	.nav-gray {
+		color: #cccccc;
+	}
+	
+	.menu:hover {
+		color: #ccffff;
+	}
+	
+	#nav-bar ul {
+		background-color: rgba(0,0,0,0.6);
+		position: fixed;
+		right: -4px;
+		top: 56px;
+		padding-right: 30px;
+		padding-left: 20px;
+		padding-bottom: 14px;
+		padding-top: 12px;
+		width: 128px;
+		cursor: default;
+		opacity: 0;
+		transition-duration: 0.3s;
+	}
+	#nav-bar ul.menuOpen {
+		cursor: pointer;
+		opacity: 1;
+		transition-duration: 0.4s;
+	}
+	
+	.menu {
+		display: none;
+	}
+	
+	.fa-window-close {
+/*
+		top: 60px;
+		right: 25px;
 */
+		margin-top: 4px;
+		margin-right: 4px;
+	}
+	
+	.fa-window-close.close-menu {
+		display: none;
+	}
+	.menu.close-menu {
+		display: block;
+		font-size: 1.3rem;
+	}
+}
+
+/* container */
 
 /* content-section */
 
@@ -129,13 +214,15 @@ navbar
 
 .content-category {
 	padding-top: 80px;
-	color: #cceeee;
-	font-family: 'Monda', sans-serif;
+/*	color: #cceeee;*/
+	font-family: 'Kanit', sans-serif;
+/*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.8rem;
 }
 
 .content-title {
-	font-family: 'Monda', sans-serif;
+	font-family: 'Kanit', sans-serif;
+/*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.4rem;
 	padding-top: 12px;
 	padding-left: 12px;
@@ -144,7 +231,9 @@ navbar
 /* article */
 
 article {
-	background-color: #cceeee;
+/*	background-color: #cceeee;*/
+/*	background-color: #344633;*/
+	background-color: #00494f;
 	border-radius: 8px;
 }
 
@@ -171,11 +260,6 @@ article img {
 }
 
 /*
-.explain h3, .detail h3 {
-	font-size: 1.1rem;
-	margin-top: -6px;
-	margin-bottom: 8px;
-}
 */
 
 div.explain {
@@ -213,8 +297,7 @@ vgrid (tileレイアウト)
 /* footer */
 
 footer {
-	color: #ccc;
-	background-color: #333;
+	background-color: #00494f;
 	margin: 60px 35px 22px 35px;
 	border-radius: 8px;
 	padding: 10px 15px;
@@ -226,23 +309,37 @@ footer {
 	font-size: 0.8rem;
 }
 
-/* gitHubロゴの上下位置調整 */
-.git_vertical_adjust {
+/* gitHubロゴとtwitterロゴの上下位置調整 */
+.sns_mono_adjust {
 	display: inline-block;
-	margin-top: -8px;
+	margin-right: 4px;
+	margin-left: 0;
+}
+
+.sns_logo_mono {
+	opacity: 0.8;
+}
+
+.sns_adjust {
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 12px;
 }
 
 /* accordion menu - アコーディオンメニュー */
 .navAccordion > dt, 
 .navAccordion > dd {
-	background-color: #009c8f;
-	border-top: 1px solid #cceeee;
+/*	background-color: #009c8f;*/
+	background-color: #147073;
+	border-top: 1px solid #00494f;
 } 
 
 .navAccordion > dt {
 	position: relative;
 	padding: 8px 16px 8px 10px;
-	color: #cceeee;
+/*	background-color: #147073;*/
+/*	color: #cceeee;*/
+	color: #accccc;
 	cursor: pointer;
 	outline: none;
 	font-size: 0.95rem;
@@ -250,7 +347,7 @@ footer {
 }
 
 .navAccordion > dt:hover {
-	color: #ffffff;
+	color: #ccffff;
 	transition-duration: 0.2s;
 }
 
@@ -271,19 +368,29 @@ footer {
 }
 
 .navAccordion > dt.open {
-	background-color: #00aaff;
+/*	background-color: #00aaff;*/
+/*	background-color: #149093;*/
 }
 
 .navAccordion > dt:not(.open) {
-	background-color: #009c8f;
+/*	background-color: #009c8f;*/
+	background-color: #147073;
 }
 
 .navAccordion > dd {
-	border-left: solid 1px #eeeeee;
-	border-right: solid 1px #eeeeee;
-	background-color: #eeffff;
-	color: #333333;
+/*	background-color: #033a58;*/
+	background-color: #accccc;
+/*	background-color: #037a88;*/
 	padding: 10px 12px 2px 12px;
+}
+
+.navAccordion > dd * {
+	color: #147073;
+}
+
+.bio {
+	margin-top: 20px;
+	margin-bottom: 0;
 }
 
 /* 現在位置を表す li の色を変える */
@@ -306,6 +413,7 @@ footer {
 	margin-top: 2px;
 	margin-bottom: 6px;
 	font-size: 0.95rem;
+	color: #1498a3;
 }
 
 /* 作品名前 */
