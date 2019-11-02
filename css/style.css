@@ -30,13 +30,13 @@ html {
 .web img:hover,
 .appli img:hover,
 .movie img:hover {
-	transform: scale(1.05);
+	transform: scale(0.95);
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
 
 .dtp img:hover {
-	transform: scale(1.1);
+	transform: scale(0.95);
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
@@ -432,4 +432,10 @@ footer {
 /* lightbox 2 */
 img.lb-image {
 	border: none;
+}
+
+/* 自己紹介 */
+.intro {
+	margin-top: 12px;
+	font-size: 0.9rem;
 }
