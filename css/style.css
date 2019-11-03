@@ -59,13 +59,13 @@ navbar
 /*	font-family: 'Monda', sans-serif;*/
 	font-family: 'Kanit', sans-serif;
 	font-style: italic;
-/*	background-color: #00494f;*/
 	background-color: #333333;
 	border-width: 0;
 	font-size: 1.2rem;
 	padding: 7px 5px 8px 5px;
 	margin-bottom: 30px;
-	border-bottom: solid 4px #147073;
+/*	border-bottom: solid 4px #147073;*/
+	border-bottom: solid 4px #00708f;
 }
 
 /* navigation bar RWD対応 */
@@ -108,11 +108,12 @@ navbar
 
 #logo {
 	display: inline-block;
-	font-size: 1.3rem;
-	color: #ccc;
+	font-size: 1.4rem;
+	color: #accccc;
 	padding-right: 25px;
 	padding-left: 14px;
 	padding-top: 12px;
+/*	text-shadow: 1px 1px 1px rgba(0,0,255,0.6);*/
 }
 
 #logo:hover {
@@ -223,6 +224,7 @@ navbar
 	font-style: italic;
 /*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.8rem;
+	text-shadow: 2px 1px 1px rgba(50,30,50,0.7);
 }
 
 .content-title {
@@ -336,14 +338,12 @@ footer {
 .navAccordion > dd {
 /*	background-color: #009c8f;*/
 	background-color: #147073;
-	border-top: 1px solid #00494f;
+	border-top: 1px solid #9cc3ca;
 } 
 
 .navAccordion > dt {
 	position: relative;
 	padding: 8px 16px 8px 10px;
-/*	background-color: #147073;*/
-/*	color: #cceeee;*/
 	color: #accccc;
 	cursor: pointer;
 	outline: none;
@@ -384,7 +384,8 @@ footer {
 
 .navAccordion > dd {
 /*	background-color: #033a58;*/
-	background-color: #accccc;
+/*	background-color: #accccc;*/
+	background-color: #9cc3ca;
 /*	background-color: #037a88;*/
 	padding: 10px 12px 2px 12px;
 }
@@ -438,4 +439,25 @@ img.lb-image {
 .intro {
 	margin-top: 12px;
 	font-size: 0.9rem;
+}
+
+small {
+	color: inherit;
+}
+
+/* 色統一の試み */
+article,
+footer {
+/*	background-color: #03305a;*/
+	background-color: #333333;
+} 
+
+body,
+.navAccordion > dt:not(.open) {
+/*	background-color: #147073;*/
+	background-color: #00708f;
+}
+
+.cd-jacket img {
+	box-shadow: 1px 1px 1px rgba(200,200,200,0.3);
 }
