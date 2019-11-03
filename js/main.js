@@ -3,6 +3,9 @@
 // li.dropdown要素配下のa要素は対象から外しておく
 $(".navbar a").not(".dropdown a").click(function () {
 	var destination = $(this).attr("href");
+	var target = $(destination == "#" || destination == "" ? 'html' : destination);
+	
+//	console.log(target);
 
 	$("html, body").animate({
 		scrollTop: $(destination).offset().top,
@@ -10,6 +13,19 @@ $(".navbar a").not(".dropdown a").click(function () {
 
 	// ハンバーガーメニューが開いている場合は閉じる
 	$(".navbar-toggle:visible").click();
+	
+	// targetに入っているジャンプ先オブジェクトのidを取得
+	var scrollTargetId = target.attr("id");
+//	console.log(scrollTargetId);
+	
+	// ハッシュをURLに追記
+	// アニメーションより先に変な動きを入れないため、0.4秒遅らせる
+	// 参考 https://qiita.com/napoan/items/22919a03ad286ca50f2c
+	
+	setTimeout(function() {
+		location.hash = scrollTargetId;
+//		return false;
+	},400);
 
 	// 本来のクリックイベントは処理しない
 	return false;
@@ -124,3 +140,4 @@ $(function () {
 		}
 	}
 });
+
