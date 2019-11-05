@@ -4,7 +4,7 @@
 
 body {
 	max-width: 1100px;
-	background-color: #147073;
+	background-color: #0076ac;
 	margin: 0 auto;
 }
 
@@ -51,6 +51,10 @@ html {
 	max-width: 280px;
 }
 
+.cd-jacket img {
+	box-shadow: 2px 1px 1px rgba(200,200,200,0.3);
+}
+
 /*********
 navbar 
 ********/
@@ -65,7 +69,7 @@ navbar
 	padding: 7px 5px 8px 5px;
 	margin-bottom: 30px;
 /*	border-bottom: solid 4px #147073;*/
-	border-bottom: solid 4px #00708f;
+	border-bottom: solid 4px #0076ac;
 }
 
 /* navigation bar RWD対応 */
@@ -86,16 +90,9 @@ navbar
 	}
 }
 
-.navbar a, .navbar a:visited {
+.navbar a {
 	color: #accccc;
 	text-decoration: none;
-}
-
-.navbar a:visited {
-/*
-	padding-right: 5px;
-	padding-left: 5px;
-*/
 }
 
 .navbar a:not(#logo):hover {
@@ -155,10 +152,6 @@ navbar
 		color: #cccccc;
 	}
 	
-	.nav-gray {
-		color: #cccccc;
-	}
-	
 	.menu:hover {
 		color: #ccffff;
 	}
@@ -167,7 +160,7 @@ navbar
 		background-color: rgba(0,0,0,0.6);
 		position: fixed;
 		right: -4px;
-		top: 56px;
+		top: 52px;
 		padding-right: 30px;
 		padding-left: 20px;
 		padding-bottom: 14px;
@@ -178,7 +171,7 @@ navbar
 		transition-duration: 0.6s;
 	}
 	#nav-bar ul li {
-		margin-top: 5px;
+		margin-top: 7px;
 	}
 	#nav-bar ul.menuOpen {
 		cursor: pointer;
@@ -191,10 +184,6 @@ navbar
 	}
 	
 	.fa-window-close {
-/*
-		top: 60px;
-		right: 25px;
-*/
 		margin-top: 6px;
 		margin-right: 4px;
 	}
@@ -238,9 +227,7 @@ navbar
 /* article */
 
 article {
-/*	background-color: #cceeee;*/
-/*	background-color: #344633;*/
-	background-color: #00494f;
+	background-color: #333333;
 	border-radius: 8px;
 }
 
@@ -304,7 +291,7 @@ vgrid (tileレイアウト)
 /* footer */
 
 footer {
-	background-color: #00494f;
+	background-color: #333333;
 	margin: 60px 35px 22px 35px;
 	border-radius: 8px;
 	padding: 10px 15px;
@@ -334,9 +321,9 @@ footer {
 }
 
 /* accordion menu - アコーディオンメニュー */
+
 .navAccordion > dt, 
 .navAccordion > dd {
-/*	background-color: #009c8f;*/
 	background-color: #147073;
 	border-top: 1px solid #9cc3ca;
 } 
@@ -378,8 +365,7 @@ footer {
 }
 
 .navAccordion > dt:not(.open) {
-/*	background-color: #009c8f;*/
-	background-color: #147073;
+	background-color: #0076ac;
 }
 
 .navAccordion > dd {
@@ -399,7 +385,7 @@ footer {
 	margin-bottom: 0;
 }
 
-/* 現在位置を表す li の色を変える */
+/* nav-top - 現在位置を表す li の色を変える */
 
 .nav-link {
 	display: inline-block;
@@ -407,10 +393,10 @@ footer {
 }
 
 .nav-link.ahora {
-	color: #00ffff;
 	transform: scale(1.15);
 	padding-right: 5px;
 	padding-left: 5px;
+	color: #ccffff;
 }
 
 /* URLの文字とマージン */
@@ -441,23 +427,3 @@ img.lb-image {
 	font-size: 0.9rem;
 }
 
-small {
-	color: inherit;
-}
-
-/* 色統一の試み */
-article,
-footer {
-/*	background-color: #03305a;*/
-	background-color: #333333;
-} 
-
-body,
-.navAccordion > dt:not(.open) {
-/*	background-color: #147073;*/
-	background-color: #00708f;
-}
-
-.cd-jacket img {
-	box-shadow: 1px 1px 1px rgba(200,200,200,0.3);
-}
