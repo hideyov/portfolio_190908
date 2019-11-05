@@ -60,15 +60,16 @@ navbar
 ********/
 
 .navbar {
-/*	font-family: 'Monda', sans-serif;*/
+	position: fixed;
+	/* ブラウザのメニューバーに隠れてしまわないように、必ず fixed 指定 */
 	font-family: 'Kanit', sans-serif;
 	font-style: italic;
 	background-color: #333333;
 	border-width: 0;
 	font-size: 1.2rem;
+	height: 64px;
 	padding: 7px 5px 8px 5px;
-	margin-bottom: 30px;
-/*	border-bottom: solid 4px #147073;*/
+	margin-bottom: 28px;
 	border-bottom: solid 4px #0076ac;
 }
 
@@ -132,13 +133,13 @@ navbar
 
 @media (max-width: 767px) {
 	.navbar {
-		height: 62px;
+/*		height: 62px;*/
 	}
 	
 	#navDrawrBtn {
 		position: fixed;
-		right: 24px;
-		top: 20px;
+		right: 20px;
+		top: 18px;
 	}
 	
 	#navDrawrBtn:hover {
@@ -184,7 +185,7 @@ navbar
 	
 	.menu.close-menu {
 		display: block;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		margin-top: 2px;
 	}
 	
@@ -194,7 +195,7 @@ navbar
 	
 	.fa-window-close {
 		font-size: 1.4rem;
-		margin-top: 4px;
+		margin-top: 6px;
 		margin-right: 4px;
 	}
 	
