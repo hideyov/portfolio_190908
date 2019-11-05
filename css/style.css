@@ -128,9 +128,6 @@ navbar
 	#navDrawrBtn {
 		display: none;
 	}
-	.fa-window-close {
-		display: none;
-	}
 }
 
 @media (max-width: 767px) {
@@ -148,10 +145,12 @@ navbar
 		cursor: pointer;
 	}
 	
+/*
 	.menu {
 		color: #cccccc;
 	}
 	
+*/
 	.menu:hover {
 		color: #ccffff;
 	}
@@ -183,19 +182,28 @@ navbar
 		display: none;
 	}
 	
-	.fa-window-close {
-		margin-top: 6px;
-		margin-right: 4px;
-	}
-	
-	.fa-window-close.close-menu {
-		display: none;
-	}
 	.menu.close-menu {
 		display: block;
 		font-size: 1.2rem;
 		margin-top: 2px;
 	}
+	
+	.fa-window-close.close-menu {
+		display: none;
+	}
+	
+	.fa-window-close {
+		font-size: 1.4rem;
+		margin-top: 4px;
+		margin-right: 4px;
+	}
+	
+/*
+	.fa-window-close:hover {
+		transform: scale(1.1);
+		transition-duration: 0.2s;
+	}
+*/
 }
 
 /* container */
