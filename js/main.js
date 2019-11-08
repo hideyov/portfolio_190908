@@ -118,12 +118,12 @@ $(function () {
 
 	function drawerFunc() {
 		if ($('#nav-bar ul').hasClass('open-menu')) {
-			$('#nav-bar ul').removeClass('open-menu');
+			$('#nav-bar ul').removeClass('open-menu move-away-menu');
 			$('.fa-window-close').addClass('close-menu');
 			$('#navDrawrBtn .menu').addClass('close-menu');
 			//			$mainNav.animate({right: -1*$mainNavWidth}, $speed, 'swing');
 		} else {
-			$('#nav-bar ul').addClass('open-menu');
+			$('#nav-bar ul').removeClass('move-away-menu').addClass('open-menu');
 			$('.fa-window-close').removeClass('close-menu');
 			$('#navDrawrBtn .menu').removeClass('close-menu');
 		}
@@ -131,13 +131,13 @@ $(function () {
 });
 
 
-// 画面幅が768px未満の時には、内容を選択（click）したらメニューを非表示にする
+/* 画面幅が768px未満の時には、内容を選択（click）したらメニューを非表示にする */
 
 $(function () {
 	var window_width = window.innerWidth;
 	$('.nav-link').on('click', function () {
 		if (window_width <= 768) {
-			$('#nav-bar ul').removeClass('open-menu');
+			$('#nav-bar ul').removeClass('open-menu').addClass('move-away-menu');
 			$('.fa-window-close').addClass('close-menu');
 			$('#navDrawrBtn .menu').addClass('close-menu');
 		}

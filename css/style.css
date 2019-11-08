@@ -200,6 +200,12 @@ header {
 		transition-duration: 0.4s;
 	}
 	
+	#nav-bar ul.move-away-menu {
+		right: -200px;
+		transition-duration: 0.4s;
+		/* スマホ閲覧時、選択後のメニューを画面の右外に追い出す */
+	}
+	
 	.menu {
 		display: none;
 	}
