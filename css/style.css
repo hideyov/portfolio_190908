@@ -27,6 +27,7 @@ html {
 article {
 	background-color: #333333;
 	border-radius: 8px;
+	position: relative;
 }
 
 article p {
@@ -61,10 +62,12 @@ article img {
 .web .fluid-img,
 .appli .fluid-img,
 .dtp .fluid-img {
-	max-width: 360px;
+/*	max-width: 360px;*/
+	max-width: 280px;
 }
 
 .movie .fluid-img {
+/*	max-width: 280px;*/
 	max-width: 280px;
 }
 
@@ -253,11 +256,13 @@ header {
 }
 
 .content-title {
+	display: inline-block;
 	font-family: 'Kanit', sans-serif;
 /*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.4rem;
 	padding-top: 12px;
 	padding-left: 12px;
+/*	margin-top: -10px;*/
 }
 
 /* detail, explain */
@@ -436,8 +441,8 @@ footer {
 /* 作品名前 */
 .title-of-works {
 	font-family: 'Monda', sans-serif;
-	font-size: 1.2rem;
-	margin-top: -6px;
+	font-size: 1.05rem;
+	margin-top: -2px;
 	margin-bottom: 8px;
 }
 
@@ -452,3 +457,14 @@ img.lb-image {
 	font-size: 0.8rem;
 }
 
+/* special logo - 特記するロゴ */
+/* articleの右上に固定表示 */
+.special-logo {
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 50px;
+	height: 20px;
+	background-color: #ccc;
+}

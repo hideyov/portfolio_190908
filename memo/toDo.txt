@@ -40,14 +40,14 @@ Yuko Uchida
 *******
 
 portfolio site
-	サイトの特性に「レスポンシブ対応」追記
-	google font再考
+	サイトの特性に「レスポンシブ対応」追記 -> 済み
+	google font再考 -> Kanit(italic)に決定
 	history APIでブラウザ上の「戻る」が使えるように
 	cssのキャッシュ対応 -> クエリー文字列追加で対応済み
 	画像遅延読み込み
 	
 Hideyov56
-	配色決定
+	配色決定 -> 大枠では決定済み
 	固定ページからの、各カテゴリーへのリンク -> web/job/music固定ページ作成で対応済み
 	固定ページのアイキャッチ画像のheightを低くする
 	個別ページのpaginationリンクのデザイン
@@ -57,7 +57,7 @@ Geronimo Label
 	スライダー（カルーセル）プラグイン slick導入 -> 導入済み
 	スマホでの画像拡大、もう少し効かせる（%調整？）
 	背景画像のパターン作成
-	配色変更
+	配色変更 -> 大枠では決定
 	フォーム（メールが届くように）
 	フォームのバリデーション
 	ルーティング
@@ -66,8 +66,40 @@ Geronimo Label
 	
 Yuko Uchida
 	LumunousからLightbox or Color Boxに変更（スマホ縦置き時の対応）-> lightbox2導入済み
-	画像の拡大から戻す方法は？
+	画像の拡大から戻す方法は？ -> cssのtransform: scaleは取りやめ
 	cssのキャッシュ対応 -> クエリー文字列追加で対応済み
+	画像遅延読み込み
+	
+*******
+191109
+*******
+
+portfolio site
+	history APIでブラウザ上の「戻る」が使えるように
+	profileのアコーディオンメニューに、作例へのリンク
+	web作例のサムネイル画像
+	WordPress,Vue.js,Larabel等のロゴ
+	画像遅延読み込み
+	
+Hideyov56
+	tag,categoryページのarticleのmargin調整（個別記事と揃える）
+	記事とsidebarの背景色（軽めの）
+	h1, h2のデザイン
+	固定ページのアイキャッチ画像のheightを低くする
+	個別ページのpaginationリンクのデザイン
+	heightが高いアイキャッチ画像を調整（一覧が揃って見えるように）
+	
+Geronimo Label
+	profileコンテンツ作成
+	Google Fonts再考
+	スマホでの画像拡大、もう少し効かせる（%調整？）
+	背景画像のパターン作成
+	フォーム（メールが届くように）
+	フォームのバリデーション
+	ルーティング(今回は見送り)
+	画像遅延読み込み
+	
+Yuko Uchida
 	画像遅延読み込み
 	
 	
