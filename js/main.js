@@ -98,11 +98,11 @@ $(function() {
 
 /* hover時、SNSとGithubロゴのopacity調整 */
 $(function() {
-	$('.sns_logos').on('mouseover', function() {
-		$('.sns_logo_mono').css('opacity', 1);	
+	$('.sns-logos').on('mouseover', function() {
+		$('.sns-logo-mono').css('opacity', 1);	
 	});
-	$('.sns_logos').on('mouseout', function() {
-		$('.sns_logo_mono').css('opacity', 0.8);	
+	$('.sns-logos').on('mouseout', function() {
+		$('.sns-logo_mono').css('opacity', 0.8);	
 	});
 });
 
@@ -117,16 +117,29 @@ $(function () {
 	});
 
 	function drawerFunc() {
-		if ($('#nav-bar ul').hasClass('menuOpen')) {
-			$('#nav-bar ul').removeClass('menuOpen');
+		if ($('#nav-bar ul').hasClass('open-menu')) {
+			$('#nav-bar ul').removeClass('open-menu');
 			$('.fa-window-close').addClass('close-menu');
 			$('#navDrawrBtn .menu').addClass('close-menu');
 			//			$mainNav.animate({right: -1*$mainNavWidth}, $speed, 'swing');
 		} else {
-			$('#nav-bar ul').addClass('menuOpen');
+			$('#nav-bar ul').addClass('open-menu');
 			$('.fa-window-close').removeClass('close-menu');
 			$('#navDrawrBtn .menu').removeClass('close-menu');
 		}
 	}
 });
 
+
+// 画面幅が768px未満の時には、内容を選択（click）したらメニューを非表示にする
+
+$(function () {
+	var window_width = window.innerWidth;
+	$('.nav-link').on('click', function () {
+		if (window_width <= 768) {
+			$('#nav-bar ul').removeClass('open-menu');
+			$('.fa-window-close').addClass('close-menu');
+			$('#navDrawrBtn .menu').addClass('close-menu');
+		}
+	});
+});

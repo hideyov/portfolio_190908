@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- lightbox2 css -->
 	<link rel="stylesheet" href="js/lightbox2/css/lightbox.css">
-	<link rel="stylesheet" href="css/style.css?m-date=201911062358">
+	<link rel="stylesheet" href="css/style.css?m-date=201911081457">
 	<link rel="stylesheet" href="css/luminous-basic.min.css">
 	<!--
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mansalva|Special+Elite&display=swap" rel="stylesheet">
@@ -111,21 +111,22 @@
 						</dl>
 
 						<dl class="navAccordion">
-							<dt tabindex="0" class="sns_logos">
-								<span class="sns_logo_mono">
-									<img src="img/prof/github_transparent_mono.png" width="22" alt=""><img src="img/prof/instagram_logo_transparent_mono.png" class="sns_mono_adjust" width="16" alt=""><img src="img/prof/twitter_transparent_mono.png" class="sns_mono_adjust" width="16" alt="">
+							<dt tabindex="0" class="sns-logos">
+								<span class="sns-logo-mono">
+									<img src="img/prof/github_transparent_mono.png" width="22" alt=""><img src="img/prof/instagram_logo_transparent_mono.png" class="sns-mono-adjust" width="16" alt=""><img src="img/prof/twitter_transparent_mono.png" class="sns-mono-adjust" width="16" alt="">
 								</span>
 								SNS / Github
 							</dt>
 							<dd>
 								<div>
-									<a href="https://github.com/hideyov/">Github <img class="git_adjust" src="img/prof/icons8-github-32.png" width="27" alt="hideyov gitHub" title="hideyov gitHub"></a>
+									<a href="https://github.com/hideyov/">Github <img class="git-adjust" src="img/prof/icons8-github-32.png" width="27" alt="hideyov gitHub" title="hideyov gitHub"></a>
+									<br>
 									<span class="comment">SublimeText/Brackets/Vimなど使用エディターの設定、Macの .profileなど環境設定ファイルを管理。</span>
 								</div>
 
 								<div style="margin-bottom: 6px;">
-									<a href="https://www.instagram.com/hideyovic/"><img class="sns_adjust" src="img/prof/Instagram_AppIcon_Aug2017.png" width="22" alt="hideyov instagram" title="hideyov instagram"></a>
-									<a href="https://twitter.com/hideyovic_ge"><img class="sns_adjust" src="img/prof/twitter_logo.png" width="22" alt="hideyovic twitter" title="hideyovic twitter"></a>
+									<a href="https://www.instagram.com/hideyovic/"><img class="sns-adjust" src="img/prof/Instagram_AppIcon_Aug2017.png" width="22" alt="hideyov instagram" title="hideyov instagram"></a>
+									<a href="https://twitter.com/hideyovic_ge"><img class="sns-adjust" src="img/prof/twitter_logo.png" width="22" alt="hideyovic twitter" title="hideyovic twitter"></a>
 								</div>
 							</dd>
 						</dl>
@@ -143,7 +144,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/portfolio/">
-							<img class="fluid_img" src="img/portfolio_scshot.png" alt="Hideyo Uesugi portfolio">
+							<img class="fluid-img" src="img/portfolio_scshot.png" alt="Hideyo Uesugi portfolio">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -181,16 +182,16 @@
 									<b>使用ソフト：</b>
 									Photoshop, Illustrator, Brackets<br>
 									<b>制作期間：</b>
-									2019年9月6日〜2019年11月3日<br>
+									2019年9月6日〜2019年11月8日<br>
 								</p>
 							</dd>
 							<dt tabindex="0">直面した不具合</dt>
 							<dd>
 								<p>
-									<b>スマホの縦持ちでの画像拡大に異常：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。これがLuminousスクリプトのバグによるものなのか、現状のスキルでは確認できないため、jQueryプラグインのLightbox2に変更して解決した。
+									<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
 								</p>
 								<p>
-									<b>ブラウザの「戻る」ボタンでの挙動：</b>ページ内リンクでの移動に応じてURLを変更する実装はできたが、ブラウザの「戻る」ボタンで移動すると、実際の表示とURL表示との間にずれが生じてしまう。chrome/firefox/safari/edgeいずれでも、ずれが確認された。ブラウザーの仕様であるかどうかも勉強不足のため、原因・解決方法はわからず未解決。
+									<b>ブラウザの「戻る」ボタンでの挙動：</b>ページ内リンクでの移動に応じてURLを変更する実装はできたが、ブラウザの「戻る」ボタンで移動すると、実際の表示とURL表示との間にずれが生じてしまう。chrome/firefox/safari/edgeいずれでも、ずれが確認された。ブラウザーの仕様であるかどうかも含め、原因・解決方法はわからず未解決。(2019.11.4)
 								</p>
 							</dd>
 							<!--
@@ -212,6 +213,9 @@
 								<p>
 									<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.3)</small>
 								</p>
+								<p>
+									<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+								</p>
 							</dd>
 						</dl>
 
@@ -225,7 +229,7 @@
 
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/utsuwa_uchida/">
-							<img class="fluid_img" src="img/uchida_site_scshot.jpg" alt="pottery">
+							<img class="fluid-img" src="img/uchida_site_scshot.jpg" alt="pottery">
 						</a>
 
 					</div>
@@ -265,13 +269,13 @@
 									<b>使用ソフト：</b>
 									Photoshop, Illustrator, Brackets<br>
 									<b>制作期間：</b>
-									2019年9月17日〜2019年10月27日<br>
+									2019年9月17日〜2019年11月7日<br>
 								</p>
 							</dd>
 							<dt tabindex="0">直面した不具合</dt>
 							<dd>
 								<p>
-									<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。これがLuminousスクリプトのバグによるものなのか、現状のスキルでは確認できないため、jQueryプラグインのLightbox2に変更した。
+									<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
 								</p>
 							</dd>
 							<dt tabindex="0">更新記録</dt>
@@ -281,6 +285,9 @@
 								</p>
 								<p>
 									<b>Lightbox2に変更：</b>画像拡大に使用するスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+								</p>
+								<p>
+									<b>スムーズスクロール：</b>index.htmlを除く各ページのトップに戻るスムーズスクロールをjQueryで実装した。<small>(2019.11.7)</small>
 								</p>
 							</dd>
 						</dl>
@@ -294,7 +301,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/blog/">
-							<img class="fluid_img" src="img/hideyov56_scshot.png" alt="blog Hideyov56">
+							<img class="fluid-img" src="img/hideyov56_scshot.png" alt="blog Hideyov56">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -325,7 +332,7 @@
 									<b>使用ソフト：</b>
 									Photoshop, Illustrator, Brackets<br>
 									<b>制作期間：</b>
-									2019年10月2日〜2019年11月3日<br>
+									2019年10月2日〜2019年11月7日<br>
 								</p>
 							</dd>
 							<dt tabindex="0">更新記録</dt>
@@ -353,7 +360,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/gernm/">
-							<img class="fluid_img" src="img/glsite_scshot.png" alt="Geronimo Label">
+							<img class="fluid-img" src="img/glsite_scshot.png" alt="Geronimo Label">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -369,8 +376,8 @@
 							<dd>
 								<p>
 									<b>Vue.jsの導入：</b>
-									ライブ情報と作品（CD）情報の多言語（日本語、英語、韓国語、中国語、スペイン語）への切り替えを、Vue.jsのv-ifディレクティブを使って実現。<br>
-									また、同形式での記載を繰り返すライブ情報の部分には、Vue.jsのコンポーネント機能を利用し、サイトの維持・運営が楽に行えるようにした。
+									ライブ情報とCD情報の多言語（日本語、英語、韓国語、中国語、スペイン語）切り替えを、Vue.jsのv-ifディレクティブを使って実現。<br>
+									同形式での記載を繰り返すライブ情報の部分には、Vue.jsのコンポーネント機能を利用し、サイトの維持・運営が楽に行えるようにした。
 								</p>
 							</dd>
 							<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
@@ -385,16 +392,16 @@
 									<b>使用ソフト：</b>
 									Photoshop, Illustrator, Brackets<br>
 									<b>制作期間：</b>
-									2019年8月5日〜2019年10月28日<br>
+									2019年8月5日〜2019年11月7日<br>
 								</p>
 							</dd>
 							<dt tabindex="0">直面した不具合</dt>
 							<dd>
 								<p>
 									<b>iOS 9.3.5のデバイスで閲覧できない：</b>
-									iPad(<b>iOS 9.3.5</b>)で閲覧した時、Google Chrome、safari、firefox いずれで閲覧しても、「問題が置きたため、このwebページを再度読み込みました。」等のエラーメッセージが出て、読み込めなかった。<br>
-									キャッシュの削除、各ブラウザのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、当サイトのみ、表示できない。<br>
-									iPhone 7(<b>iOS 12</b>)では問題なく表示されたため、<b>iOS 9.3.5 固有の不具合</b>ではないかと思われる。あるいは<b>Vue.jsとiOS 9.3.5の相性</b>の問題もあるのかどうか、現時点では調査方法さえもわからない。
+									iPad(<b>iOS 9.3.5</b>)で閲覧した時、Google Chrome、safari、firefox いずれで閲覧しても、「問題が置きたため、このwebページを再度読み込みました。」等のエラーメッセージが出て、ページが表示できなかった。<br>
+									キャッシュの削除、各ブラウザのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、当サイトのみ、表示できなかった。<br>
+									iPhone 7(<b>iOS 12</b>)では問題なく表示された。<b>iOS 9.3.5 固有の不具合</b>か、あるいは<b>Vue.jsとiOS 9.3.5の相性</b>の問題もあるのかどうか、現時点では調査方法がわからない。(2019.11.7)
 								</p>
 							</dd>
 							<dt tabindex="0">更新記録</dt>
@@ -408,11 +415,17 @@
 								<p>
 									<b>カルーセルスライダーの実装：</b>トップページのスライドを、jQueryプラグインのslickで実装した。<small>(2019.10.28)</small>
 								</p>
+								<p>
+									<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.4)</small>
+								</p>
+								<p>
+									<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+								</p>
 							</dd>
 							<dt tabindex="0">実装したい機能</dt>
 							<dd>
 								<p>
-									ナビゲーションのメニューからページ内リンクで遷移した時に、遷移したコンテンツに応じたURLが表示されるようにしたい。
+									11月4日に実装したURLへのハッシュ値追加は、多言語切り替えには対応できていない。そのため、ページ再読込をすると、どの言語で閲覧していてもすべて日本語ページで読み込まれてしまう。Vue.jsのルーティング機能を習得してURLを、言語切り替えに対応させたい。
 								</p>
 							</dd>
 						</dl>
@@ -430,7 +443,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="http://chat-about.herokuapp.com/">
-							<img class="fluid_img" src="img/chatAbout_scshot.png" alt="chat about">
+							<img class="fluid-img" src="img/chatAbout_scshot.png" alt="chat about">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -467,7 +480,7 @@
 							<dt tabindex="0">Github、ワイヤーフレーム</dt>
 							<dd>
 								<p>
-									<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git_adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
+									<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git-adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
 									<br>
 									<a class="url-of-works" href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
 										ワイヤーフレーム <small>(Cacoo使用)</small>
@@ -641,7 +654,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.youtube.com/watch?v=5a4_-Xza1LM">
-							<img class="fluid_img" src="img/reed_fire.png" alt="reed">
+							<img class="fluid-img" src="img/reed_fire.png" alt="reed">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -682,7 +695,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a class="url-of-works" href="https://www.youtube.com/watch?v=XjsVFtD83FM">
-							<img class="fluid_img" src="img/mura_hongkong.png" alt="geronimo label">
+							<img class="fluid-img" src="img/mura_hongkong.png" alt="geronimo label">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -722,7 +735,7 @@
 				<div class="row">
 					<div class="explain col-sm-5">
 						<a href="https://www.youtube.com/watch?v=KzWfRyw9aEE">
-							<img class="fluid_img" src="img/no_war_seoul.png" alt="seoul korea">
+							<img class="fluid-img" src="img/no_war_seoul.png" alt="seoul korea">
 						</a>
 					</div>
 					<section class="detail col-sm-7">
@@ -779,7 +792,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
 	<script src="js/luminous.min.js"></script>
-	<script src="js/main.js?m-date=201911052110"></script>
+	<script src="js/main.js?m-date=201911081457"></script>
 	<script src="js/lightbox2/js/lightbox.min.js"></script>
 </body>
 
