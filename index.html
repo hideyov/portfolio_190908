@@ -80,7 +80,7 @@
 									2005年より独学でHTML/CSSを学習し、自らの音楽活動のサイトを維持・運営。2015年前後より、web開発の現場で仕事することを志向してJavaScript/PHPの学習を始めるが、独学に限界を感じ2019年5月から8月にかけて、<b>TECH ACADEMY</b>の「PHP/Laravelコース」「フロントエンドコース」を受講した。
 								</p>
 								<p>
-									>>> <b><a href="#web">web site作例</a></b>
+									>>> <b><a class="jump-to-example" href="#web">web site作例</a></b>
 								</p>
 							</dd>
 							<dt tabindex="0">DTP</dt>
@@ -89,7 +89,7 @@
 									Photoshop, illustratorを独学で習得し、自分のバンドのCDのジャケットデザインを数度に渡り手がけた。2014年より、陶芸や漆器などの展覧会の告知ハガキ作成を請け負う。
 								</p>
 								<p>
-									>>> <b><a href="#dtp">DTP作例</a></b>
+									>>> <b><a class="jump-to-example" href="#dtp">DTP作例</a></b>
 								</p>
 							</dd>
 							<dt tabindex="0">Movie</dt>
@@ -98,7 +98,7 @@
 									2012年より、音楽活動のためのyoutube動画を多数制作。2016年には山城萱葺（かやぶき）株式会社の依頼で、ヨシ焼きPR動画を作成。2018年から2019年にはインターネットメディアの会社で、取材および動画編集にも携わった。
 								</p>
 								<p>
-									>>> <b><a href="#movie">Movie作例</a></b>
+									>>> <b><a class="jump-to-example" href="#movie">Movie作例</a></b>
 								</p>
 							</dd>
 						</dl>
@@ -164,69 +164,71 @@
 							<a class="url-of-works" href="https://www.hideyov.com/portfolio/">https://www.hideyov.com/portfolio/</a>
 						</p>
 
-						<dl class="navAccordion">
-							<dt tabindex="0">このサイトについて</dt>
-							<dd>
-								<p>
-									<b>RWD対応：</b>768pxをブレイクポイントとするレスポンシブWebデザインを採用。
-								</p>
-								<p>
-									<b>W3CのWeb標準規格に準拠：</b>
-									CSS Validation Service によるCSSファイルの検証、Markup Validation Service と Another HTML-lint によるHTMLファイルの検証を行ない、W3CのWeb標準規格に完全準拠するサイトを目指した。
-								</p>
-								<p>
-									<b>タイルレイアウト：</b>DTPのページではプラグイン jquery.vgrid.min.js を使って、画像をタイルレイアウトで配置した。
-								</p>
-								<p>
-									<b>モーダルウィンドウ：</b>DTP作例の画像拡大には、jQueryプラグインのLightbox2を使用した。
-								</p>
-							</dd>
-							<dt tabindex="0">使用言語、ライブラリー</dt>
-							<dd>
-								<p>
-									<b>使用言語：</b>
-									HTML5, CSS3, JavaScript<br>
-									<b>使用ライブラリー、スクリプト：</b>
-									jQuery, Bootstrap, Lightbox2, jquery.vgrid.min.js<br>
-									<b>使用ソフト：</b>
-									Photoshop, Illustrator, Brackets<br>
-									<b>制作期間：</b>
-									2019年9月6日〜2019年11月8日<br>
-								</p>
-							</dd>
-							<dt tabindex="0">直面した不具合</dt>
-							<dd>
-								<p>
-									<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
-								</p>
-								<p>
-									<b>ブラウザの「戻る」ボタンでの挙動：</b>ページ内リンクでの移動に応じてURLを変更する実装はできたが、ブラウザの「戻る」ボタンで移動すると、実際の表示とURL表示との間にずれが生じてしまう。chrome/firefox/safari/edgeいずれでも、ずれが確認された。ブラウザーの仕様であるかどうかも含め、原因・解決方法はわからず未解決。(2019.11.4)
-								</p>
-							</dd>
-							<!--
+						<div class="site-detail">
+							<dl class="navAccordion">
+								<dt tabindex="0">このサイトについて</dt>
+								<dd>
+									<p>
+										<b>RWD対応：</b>768pxをブレイクポイントとするレスポンシブWebデザインを採用。
+									</p>
+									<p>
+										<b>W3CのWeb標準規格に準拠：</b>
+										CSS Validation Service によるCSSファイルの検証、Markup Validation Service と Another HTML-lint によるHTMLファイルの検証を行ない、W3CのWeb標準規格に完全準拠するサイトを目指した。
+									</p>
+									<p>
+										<b>タイルレイアウト：</b>DTPのページではプラグイン jquery.vgrid.min.js を使って、画像をタイルレイアウトで配置した。
+									</p>
+									<p>
+										<b>モーダルウィンドウ：</b>DTP作例の画像拡大には、jQueryプラグインのLightbox2を使用した。
+									</p>
+								</dd>
+								<dt tabindex="0">使用言語、ライブラリー</dt>
+								<dd>
+									<p>
+										<b>使用言語：</b>
+										HTML5, CSS3, JavaScript<br>
+										<b>使用ライブラリー、スクリプト：</b>
+										jQuery, Bootstrap, Lightbox2, jquery.vgrid.min.js<br>
+										<b>使用ソフト：</b>
+										Photoshop, Illustrator, Brackets<br>
+										<b>制作期間：</b>
+										2019年9月6日〜2019年11月8日<br>
+									</p>
+								</dd>
+								<dt tabindex="0">直面した不具合</dt>
+								<dd>
+									<p>
+										<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
+									</p>
+									<p>
+										<b>ブラウザの「戻る」ボタンでの挙動：</b>ページ内リンクでの移動に応じてURLを変更する実装はできたが、ブラウザの「戻る」ボタンで移動すると、実際の表示とURL表示との間にずれが生じてしまう。chrome/firefox/safari/edgeいずれでも、ずれが確認された。ブラウザーの仕様であるかどうかも含め、原因・解決方法はわからず未解決。(2019.11.4)
+									</p>
+								</dd>
+								<!--
 							<dt tabindex="0">実装したい機能</dt>
 							<dd>
 							</dd>
 -->
-							<dt tabindex="0">更新記録</dt>
-							<dd>
-								<p>
-									<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.15)</small>
-								</p>
-								<p>
-									<b>現在位置の表示：</b>ページ内リンクで飛んだ現在位置に対応するトップナビゲーションの、li要素の色を変える処理をjQueryで実装した。<small>(2019.10.22)</small>
-								</p>
-								<p>
-									<b>lightbox2に変更：</b>画像拡大のスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
-								</p>
-								<p>
-									<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.3)</small>
-								</p>
-								<p>
-									<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
-								</p>
-							</dd>
-						</dl>
+								<dt tabindex="0">更新記録</dt>
+								<dd>
+									<p>
+										<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.15)</small>
+									</p>
+									<p>
+										<b>現在位置の表示：</b>ページ内リンクで飛んだ現在位置に対応するトップナビゲーションの、li要素の色を変える処理をjQueryで実装した。<small>(2019.10.22)</small>
+									</p>
+									<p>
+										<b>lightbox2に変更：</b>画像拡大のスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+									</p>
+									<p>
+										<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.3)</small>
+									</p>
+									<p>
+										<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+									</p>
+								</dd>
+							</dl>
+						</div><!-- .site-detail -->
 
 					</section>
 				</div>
@@ -238,7 +240,7 @@
 
 					<div class="explain col-sm-5">
 						<a href="https://www.hideyov.com/utsuwa_uchida/">
-							<img class="fluid-img" src="img/uchida_site_scshot.jpg" width="20%" alt="pottery">
+							<img class="fluid-img" src="img/uchida_site_scshot.jpg" alt="pottery">
 							<!--							<img src="img/uchida_site_scshot.jpg" width="100%" alt="pottery">-->
 						</a>
 
@@ -252,55 +254,57 @@
 							<a class="url-of-works" href="https://www.hideyov.com/utsuwa_uchida/">https://www.hideyov.com/utsuwa_uchida/</a>
 						</p>
 
-						<dl class="navAccordion">
-							<dt tabindex="0">このサイトについて</dt>
-							<dd>
-								<p>
-									<b>RWD対応：</b>576px、768pxをブレイクポイントとするレスポンシブWebデザインを採用。
-								</p>
-								<p>
-									<b>W3CのWeb標準規格に準拠：</b>
-									CSS Validation Service によるCSSファイルの検証、Markup Validation Service と Another HTML-lint によるHTMLファイルの検証を行ない、W3CのWeb標準規格に完全準拠するサイトを目指した。
-								</p>
-								<p>
-									<b>タイルレイアウト：</b>作品ページではプラグイン jquery.vgrid.min.js を使って、画像をタイルレイアウトで配置した。
-								</p>
-								<p>
-									<b>モーダルウィンドウ：</b>作品ページの画像拡大には、jQueryプラグインのLightbox2を使用した。
-								</p>
-							</dd>
-							<dt tabindex="0">使用言語、ライブラリー</dt>
-							<dd>
-								<p>
-									<b>使用言語：</b>
-									HTML5, CSS3, JavaScript<br>
-									<b>使用ライブラリー、スクリプト：</b>
-									jQuery, Bootstrap, Lightbox2, jquery.vgrid.min.js<br>
-									<b>使用ソフト：</b>
-									Photoshop, Illustrator, Brackets<br>
-									<b>制作期間：</b>
-									2019年9月17日〜2019年11月7日<br>
-								</p>
-							</dd>
-							<dt tabindex="0">直面した不具合</dt>
-							<dd>
-								<p>
-									<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
-								</p>
-							</dd>
-							<dt tabindex="0">更新記録</dt>
-							<dd>
-								<p>
-									<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.15)</small>
-								</p>
-								<p>
-									<b>Lightbox2に変更：</b>画像拡大に使用するスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
-								</p>
-								<p>
-									<b>スムーズスクロール：</b>index.htmlを除く各ページのトップに戻るスムーズスクロールをjQueryで実装した。<small>(2019.11.7)</small>
-								</p>
-							</dd>
-						</dl>
+						<div class="site-detail">
+							<dl class="navAccordion">
+								<dt tabindex="0">このサイトについて</dt>
+								<dd>
+									<p>
+										<b>RWD対応：</b>576px、768pxをブレイクポイントとするレスポンシブWebデザインを採用。
+									</p>
+									<p>
+										<b>W3CのWeb標準規格に準拠：</b>
+										CSS Validation Service によるCSSファイルの検証、Markup Validation Service と Another HTML-lint によるHTMLファイルの検証を行ない、W3CのWeb標準規格に完全準拠するサイトを目指した。
+									</p>
+									<p>
+										<b>タイルレイアウト：</b>作品ページではプラグイン jquery.vgrid.min.js を使って、画像をタイルレイアウトで配置した。
+									</p>
+									<p>
+										<b>モーダルウィンドウ：</b>作品ページの画像拡大には、jQueryプラグインのLightbox2を使用した。
+									</p>
+								</dd>
+								<dt tabindex="0">使用言語、ライブラリー</dt>
+								<dd>
+									<p>
+										<b>使用言語：</b>
+										HTML5, CSS3, JavaScript<br>
+										<b>使用ライブラリー、スクリプト：</b>
+										jQuery, Bootstrap, Lightbox2, jquery.vgrid.min.js<br>
+										<b>使用ソフト：</b>
+										Photoshop, Illustrator, Brackets<br>
+										<b>制作期間：</b>
+										2019年9月17日〜2019年11月7日<br>
+									</p>
+								</dd>
+								<dt tabindex="0">直面した不具合</dt>
+								<dd>
+									<p>
+										<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
+									</p>
+								</dd>
+								<dt tabindex="0">更新記録</dt>
+								<dd>
+									<p>
+										<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.15)</small>
+									</p>
+									<p>
+										<b>Lightbox2に変更：</b>画像拡大に使用するスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+									</p>
+									<p>
+										<b>スムーズスクロール：</b>index.htmlを除く各ページのトップに戻るスムーズスクロールをjQueryで実装した。<small>(2019.11.7)</small>
+									</p>
+								</dd>
+							</dl>
+						</div><!-- .site-detail -->
 
 					</section>
 				</div>
@@ -321,39 +325,40 @@
 						</h3>
 						<p>
 							<a class="url-of-works" href="https://www.hideyov.com/blog/">https://www.hideyov.com/blog/</a>
-							<img class="product-logo" src="img/product-logos/WordPress-logotype-wmark-white-300px.png" width="30" alt="">
 						</p>
 
-						<dl class="navAccordion">
-							<dt tabindex="0">このサイトについて</dt>
-							<dd>
-								<p>
-									<b>WordPressで構築した個人ブログ：</b>
-									制作開始以前の日付の記事は、2006年より運営しているブログ <a class="url-of-works" href="https://www.musicadeira.com/blogvic/">「勝つ時だってあるだろう」</a> および、Facebookへの投稿より転載した。
-								</p>
-							</dd>
-							<dt tabindex="0">使用言語、ライブラリー</dt>
-							<dd>
-								<p>
-									<b>CMS：</b>
-									WordPress<br>
-									<b>使用言語：</b>
-									HTML5, CSS3, PHP, JavaScript<br>
-									<b>使用ライブラリー、スクリプト：</b>
-									jQuery<br>
-									<b>使用ソフト：</b>
-									Photoshop, Illustrator, Brackets<br>
-									<b>制作期間：</b>
-									2019年10月2日〜2019年11月7日<br>
-								</p>
-							</dd>
-							<dt tabindex="0">更新記録</dt>
-							<dd>
-								<p>
-									<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.17)</small>
-								</p>
-							</dd>
-							<!--
+						<div class="site-detail">
+							<img class="product-logo" src="img/product-logos/WordPress-logotype-wmark-white-300px.png" width="30" alt="WordPress" title="WordPress">
+							<dl class="navAccordion">
+								<dt tabindex="0">このサイトについて</dt>
+								<dd>
+									<p>
+										<b>WordPressで構築した個人ブログ：</b>
+										制作開始以前の日付の記事は、2006年より運営しているブログ <a class="url-of-works" href="https://www.musicadeira.com/blogvic/">「勝つ時だってあるだろう」</a> および、Facebookへの投稿より転載した。
+									</p>
+								</dd>
+								<dt tabindex="0">使用言語、ライブラリー</dt>
+								<dd>
+									<p>
+										<b>CMS：</b>
+										WordPress<br>
+										<b>使用言語：</b>
+										HTML5, CSS3, PHP, JavaScript<br>
+										<b>使用ライブラリー、スクリプト：</b>
+										jQuery<br>
+										<b>使用ソフト：</b>
+										Photoshop, Illustrator, Brackets<br>
+										<b>制作期間：</b>
+										2019年10月2日〜2019年11月7日<br>
+									</p>
+								</dd>
+								<dt tabindex="0">更新記録</dt>
+								<dd>
+									<p>
+										<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.17)</small>
+									</p>
+								</dd>
+								<!--
 							<dt tabindex="0">確認した不具合（2019年9月24日現在）</dt>
 							<dd>
 							</dd>
@@ -361,7 +366,8 @@
 							<dd>
 							</dd>
 -->
-						</dl>
+							</dl>
+						</div><!-- .site-detail -->
 
 					</section>
 				</div>
@@ -381,66 +387,69 @@
 						</h3>
 						<p>
 							<a class="url-of-works" href="https://www.hideyov.com/gernm/">https://www.hideyov.com/gernm/</a>
-							<img class="product-logo" src="img/product-logos/Vue_logo.jpg" width="36" alt=""> </p>
+						</p>
 
-						<dl class="navAccordion">
-							<dt tabindex="0">このサイトについて</dt>
-							<dd>
-								<p>
-									<b>Vue.jsの導入：</b>
-									ライブ情報とCD情報の多言語（日本語、英語、韓国語、中国語、スペイン語）切り替えを、Vue.jsのv-ifディレクティブを使って実現。<br>
-									同形式での記載を繰り返すライブ情報の部分には、Vue.jsのコンポーネント機能を利用し、サイトの維持・運営が楽に行えるようにした。
-								</p>
-							</dd>
-							<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
-							<dd>
-								<p>
-									<b>使用言語：</b>
-									HTML5, CSS3, JavaScript<br>
-									<b>使用フレームワーク：</b>
-									Vue.js<br>
-									<b>使用ライブラリー：</b>
-									jQuery, Bootstrap, Lightbox2, slick.min.js<br>
-									<b>使用ソフト：</b>
-									Photoshop, Illustrator, Brackets<br>
-									<b>制作期間：</b>
-									2019年8月5日〜2019年11月7日<br>
-								</p>
-							</dd>
-							<dt tabindex="0">直面した不具合</dt>
-							<dd>
-								<p>
-									<b>iOS 9.3.5のデバイスで閲覧できない：</b>
-									iPad(<b>iOS 9.3.5</b>)で閲覧した時、Google Chrome、safari、firefox いずれで閲覧しても、「問題が置きたため、このwebページを再度読み込みました。」等のエラーメッセージが出て、ページが表示できなかった。<br>
-									キャッシュの削除、各ブラウザのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、当サイトのみ、表示できなかった。<br>
-									iPhone 7(<b>iOS 12</b>)では問題なく表示された。<b>iOS 9.3.5 固有の不具合</b>か、あるいは<b>Vue.jsとiOS 9.3.5の相性</b>の問題もあるのかどうか、現時点では調査方法がわからない。(2019.11.7)
-								</p>
-							</dd>
-							<dt tabindex="0">更新記録</dt>
-							<dd>
-								<p>
-									<b>Lightbox2に変更：</b>画像拡大のスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
-								</p>
-								<p>
-									<b>ナビゲーションの実装：</b>bootstrapデフォルトのナビゲーションから、jQueryで独自に組んだナビゲーションに変更。<small>(2019.10.28)</small>
-								</p>
-								<p>
-									<b>カルーセルスライダーの実装：</b>トップページのスライドを、jQueryプラグインのslickで実装した。<small>(2019.10.28)</small>
-								</p>
-								<p>
-									<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.4)</small>
-								</p>
-								<p>
-									<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
-								</p>
-							</dd>
-							<dt tabindex="0">実装したい機能</dt>
-							<dd>
-								<p>
-									11月4日に実装したURLへのハッシュ値追加は、多言語切り替えには対応できていない。そのため、ページ再読込をすると、どの言語で閲覧していてもすべて日本語ページで読み込まれてしまう。Vue.jsのルーティング機能を習得してURLを、言語切り替えに対応させたい。
-								</p>
-							</dd>
-						</dl>
+						<div class="site-detail">
+							<img class="product-logo" src="img/product-logos/Vue_logo.jpg" width="36" alt="Vue.js" title="Vue.js">
+							<dl class="navAccordion">
+								<dt tabindex="0">このサイトについて</dt>
+								<dd>
+									<p>
+										<b>Vue.jsの導入：</b>
+										ライブ情報とCD情報の多言語（日本語、英語、韓国語、中国語、スペイン語）切り替えを、Vue.jsのv-ifディレクティブを使って実現。<br>
+										同形式での記載を繰り返すライブ情報の部分には、Vue.jsのコンポーネント機能を利用し、サイトの維持・運営が楽に行えるようにした。
+									</p>
+								</dd>
+								<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
+								<dd>
+									<p>
+										<b>使用言語：</b>
+										HTML5, CSS3, JavaScript<br>
+										<b>使用フレームワーク：</b>
+										Vue.js<br>
+										<b>使用ライブラリー：</b>
+										jQuery, Bootstrap, Lightbox2, slick.min.js<br>
+										<b>使用ソフト：</b>
+										Photoshop, Illustrator, Brackets<br>
+										<b>制作期間：</b>
+										2019年8月5日〜2019年11月7日<br>
+									</p>
+								</dd>
+								<dt tabindex="0">直面した不具合</dt>
+								<dd>
+									<p>
+										<b>iOS 9.3.5のデバイスで閲覧できない：</b>
+										iPad(<b>iOS 9.3.5</b>)で閲覧した時、Google Chrome、safari、firefox いずれで閲覧しても、「問題が置きたため、このwebページを再度読み込みました。」等のエラーメッセージが出て、ページが表示できなかった。<br>
+										キャッシュの削除、各ブラウザのアップデート確認（いずれも自動アップデートされて最新版）、iPadの再起動などすべて試したが、当サイトのみ、表示できなかった。<br>
+										iPhone 7(<b>iOS 12</b>)では問題なく表示された。<b>iOS 9.3.5 固有の不具合</b>か、あるいは<b>Vue.jsとiOS 9.3.5の相性</b>の問題もあるのかどうか、現時点では調査方法がわからない。(2019.11.7)
+									</p>
+								</dd>
+								<dt tabindex="0">更新記録</dt>
+								<dd>
+									<p>
+										<b>Lightbox2に変更：</b>画像拡大のスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+									</p>
+									<p>
+										<b>ナビゲーションの実装：</b>bootstrapデフォルトのナビゲーションから、jQueryで独自に組んだナビゲーションに変更。<small>(2019.10.28)</small>
+									</p>
+									<p>
+										<b>カルーセルスライダーの実装：</b>トップページのスライドを、jQueryプラグインのslickで実装した。<small>(2019.10.28)</small>
+									</p>
+									<p>
+										<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.4)</small>
+									</p>
+									<p>
+										<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+									</p>
+								</dd>
+								<dt tabindex="0">実装したい機能</dt>
+								<dd>
+									<p>
+										11月4日に実装したURLへのハッシュ値追加は、多言語切り替えには対応できていない。そのため、ページ再読込をすると、どの言語で閲覧していてもすべて日本語ページで読み込まれてしまう。Vue.jsのルーティング機能を習得してURLを、言語切り替えに対応させたい。
+									</p>
+								</dd>
+							</dl>
+						</div><!-- .site-detail -->
 
 					</section>
 				</div>
@@ -466,53 +475,56 @@
 							<a class="url-of-works" href="http://chat-about.herokuapp.com/">http://chat-about.herokuapp.com/</a>
 						</p>
 
-						<dl class="navAccordion">
-							<dt tabindex="0">このサイトについて</dt>
-							<dd>
-								<p>
-									<b>実装した機能：</b>
-									ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能
-								</p>
-							</dd>
-							<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
-							<dd>
-								<p>
-									<b>使用言語：</b>
-									HTML5, CSS3, PHP<br>
-									<b>使用ライブラリー：</b>
-									jQuery, Bootstrap<br>
-									<b>使用フレームワーク：</b>
-									Laravel<br>
-									<b>使用ソフト：</b>
-									Photoshop, Illustrator, Brackets<br>
-									<b>制作期間：</b>
-									2019年6月20日〜2019年7月7日<br>
-								</p>
-							</dd>
-							<dt tabindex="0">Github、ワイヤーフレーム</dt>
-							<dd>
-								<p>
-									<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git-adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
-									<br>
-									<a class="url-of-works" href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
-										ワイヤーフレーム <small>(Cacoo使用)</small>
-									</a>
-								</p>
-							</dd>
-							<dt tabindex="0">実装したい機能</dt>
-							<dd>
-								<p>
-									"Laravel", "Vue.js" など、web開発に関する（設定済みの）トピックごとに投稿できる機能。
-								</p>
-							</dd>
-							<!--
+						<div class="site-detail">
+							<img class="product-logo" src="img/product-logos/laravel.png" width="30" alt="Laravel" title="Laravel">
+							<dl class="navAccordion">
+								<dt tabindex="0">このサイトについて</dt>
+								<dd>
+									<p>
+										<b>実装した機能：</b>
+										ユーザ登録・ログイン認証機能/ユーザープロフィール編集機能/ユーザーのフォロー・フォロー解除機能/投稿の編集・削除機能/投稿の「お気に入り」追加・削除機能
+									</p>
+								</dd>
+								<dt tabindex="0">使用言語、ライブラリー、フレームワーク</dt>
+								<dd>
+									<p>
+										<b>使用言語：</b>
+										HTML5, CSS3, PHP<br>
+										<b>使用ライブラリー：</b>
+										jQuery, Bootstrap<br>
+										<b>使用フレームワーク：</b>
+										Laravel<br>
+										<b>使用ソフト：</b>
+										Photoshop, Illustrator, Brackets<br>
+										<b>制作期間：</b>
+										2019年6月20日〜2019年7月7日<br>
+									</p>
+								</dd>
+								<dt tabindex="0">Github、ワイヤーフレーム</dt>
+								<dd>
+									<p>
+										<a class="url-of-works" href="https://github.com/hideyov/techAcademy_chatAbout">Github <img class="git-adjust" src="img/prof/icons8-github-32.png" width="22" alt="gitHub"></a>
+										<br>
+										<a class="url-of-works" href="https://cacoo.com/diagrams/3X1qIptbapI62SPY/4B2CB">
+											ワイヤーフレーム <small>(Cacoo使用)</small>
+										</a>
+									</p>
+								</dd>
+								<dt tabindex="0">実装したい機能</dt>
+								<dd>
+									<p>
+										"Laravel", "Vue.js" など、web開発に関する（設定済みの）トピックごとに投稿できる機能。
+									</p>
+								</dd>
+								<!--
 							<dt tabindex="0">更新記録</dt>
 							<dd>
 								<p>
 								</p>
 							</dd>
 -->
-						</dl>
+							</dl>
+						</div><!-- .site-detail -->
 
 					</section>
 				</div>
@@ -804,7 +816,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
 	<script src="js/luminous.min.js"></script>
-	<script src="js/main.js?m-date=201911081827"></script>
+	<script src="js/main.js?m-date=201911100522"></script>
 	<script src="js/lightbox2/js/lightbox.min.js"></script>
 </body>
 

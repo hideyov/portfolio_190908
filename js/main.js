@@ -1,7 +1,7 @@
 /* ナビゲーションバーのからスムーズにスクロールしながら対象位置に移動 */
 
 // li.dropdown要素配下のa要素は対象から外しておく
-$(".navbar a").not(".dropdown a").click(function () {
+$(".navbar a, .jump-to-example").not(".dropdown a").click(function () {
 	var destination = $(this).attr("href");
 	var target = $(destination == "#" || destination == "" ? 'html' : destination);
 	
