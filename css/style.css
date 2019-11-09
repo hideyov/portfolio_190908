@@ -27,7 +27,6 @@ html {
 article {
 	background-color: #333333;
 	border-radius: 8px;
-	position: relative;
 }
 
 article p {
@@ -45,8 +44,8 @@ article img {
 	width: 100%;
 }
 
-.web img:hover,
-.appli img:hover,
+.web img:not(.product-logo):hover,
+.appli img:not(.product-logo):hover,
 .movie img:hover {
 	transform: scale(0.95);
 	transition-duration: 0.4s;
@@ -62,8 +61,7 @@ article img {
 .web .fluid-img,
 .appli .fluid-img,
 .dtp .fluid-img {
-/*	max-width: 360px;*/
-	max-width: 280px;
+	max-width: 360px;
 }
 
 .movie .fluid-img {
@@ -256,15 +254,25 @@ header {
 }
 
 .content-title {
-	display: inline-block;
 	font-family: 'Kanit', sans-serif;
 /*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.4rem;
 	padding-top: 12px;
 	padding-left: 12px;
-/*	margin-top: -10px;*/
 }
 
+/*
+#web .content-title,
+#appli .content-title {
+	display: inline-block;
+	margin-top: 0;
+}
+
+#web article,
+#appli article {
+	margin-top: 20px;
+}
+*/
 /* detail, explain */
 
 .detail, .explain {
@@ -457,14 +465,14 @@ img.lb-image {
 	font-size: 0.8rem;
 }
 
-/* special logo - 特記するロゴ */
+/* product logo - 特記するロゴ */
 /* articleの右上に固定表示 */
-.special-logo {
-	display: inline-block;
-	position: absolute;
-	top: 5px;
-	right: 10px;
-	width: 50px;
-	height: 20px;
-	background-color: #ccc;
+
+.product-logo {
+	width: 28px;
+	height: 28px;
+/*	margin-bottom: 8px;*/
+	margin-left: 10px;
+/*	background-color: #ccc;*/
+	border-radius: 0;
 }
