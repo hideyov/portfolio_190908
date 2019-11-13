@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- lightbox2 css -->
 	<link rel="stylesheet" href="js/lightbox2/css/lightbox.css">
-	<link rel="stylesheet" href="css/style.css?m-date=201911121219">
+	<link rel="stylesheet" href="css/style.css?m-date=201911121316">
 	<link rel="stylesheet" href="css/luminous-basic.min.css">
 	<!--
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mansalva|Special+Elite&display=swap" rel="stylesheet">
@@ -198,7 +198,7 @@
 								<dt tabindex="0">直面した不具合</dt>
 								<dd>
 									<p>
-										<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
+										<b>スマホ縦表示で過大に拡大：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプト・Luminousを使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)の縦表示でDTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
 									</p>
 									<p>
 										<b>ブラウザの「戻る」ボタンでの挙動：</b>ページ内リンクでの移動に応じてURLを変更する実装はできたが、ブラウザの「戻る」ボタンで移動すると、実際の表示とURL表示との間にずれが生じてしまう。chrome/firefox/safari/edgeいずれでも、ずれが確認された。ブラウザーの仕様であるかどうかも含め、原因・解決方法はわからず未解決。(2019.11.4)
@@ -218,13 +218,16 @@
 										<b>現在位置の表示：</b>ページ内リンクで飛んだ現在位置に対応するトップナビゲーションの、li要素の色を変える処理をjQueryで実装した。<small>(2019.10.22)</small>
 									</p>
 									<p>
-										<b>lightbox2に変更：</b>画像拡大のスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+										<b>lightbox2に変更：</b>画像拡大のスクリプトをLuminousからLightbox2に変更した。<small>(2019.10.27)</small>
 									</p>
 									<p>
 										<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.3)</small>
 									</p>
 									<p>
 										<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+									</p>
+									<p>
+										<b>プロダクトロゴ：</b>WordPress, Vue.js, Laravelのプロダクトロゴ表示を追加。<small>(2019.11.11)</small>
 									</p>
 								</dd>
 							</dl>
@@ -287,7 +290,7 @@
 								<dt tabindex="0">直面した不具合</dt>
 								<dd>
 									<p>
-										<b>LuminousからLightbox2に変更：</b>DTP作例の画像拡大には、最初、jQueryを使わない軽量スクリプトである"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)を<b>縦方向に持った場合のみ</b>、DTP作例をクリックした際に、スクロールが必要なほど過大に拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
+										<b>スマホ縦表示で画像が過大に拡大：</b>DTP作例の画像拡大には最初、jQueryを使わない軽量スクリプト"Luminous"を使用した。しかし、Androidのスマートフォン(Android4.4.2)、iPhone 7(iOS 12.1.4)の縦表示でDTP作例をクリックした際に、スクロールが必要なほど拡大されてしまう。現状のスキルでは原因究明ができないため、jQueryプラグインのLightbox2に変更した。
 									</p>
 								</dd>
 								<dt tabindex="0">更新記録</dt>
@@ -296,7 +299,7 @@
 										<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.15)</small>
 									</p>
 									<p>
-										<b>Lightbox2に変更：</b>画像拡大に使用するスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+										<b>Lightbox2に変更：</b>画像拡大に使用するスクリプトをLuminousからLightbox2に変更した。<small>(2019.10.27)</small>
 									</p>
 									<p>
 										<b>スムーズスクロール：</b>index.htmlを除く各ページのトップに戻るスムーズスクロールをjQueryで実装した。<small>(2019.11.7)</small>
@@ -354,7 +357,22 @@
 								<dt tabindex="0">更新記録</dt>
 								<dd>
 									<p>
+										サイドバーをレイアウト。<small>(2019.10.15)</small>
+									</p>
+									<p>
+										パンくずリストを実装。<small>(2019.10.16)</small>
+									</p>
+									<p>
 										<b>SSL：</b>サイトの常時SSL化（常時HTTPS化）を実施した。<small>(2019.10.17)</small>
+									</p>
+									<p>
+										<b>トップページ：</b>web/job/musicと自己紹介の各固定ページに移動できるよう、トップページを作成。<small>(2019.11.1)</small>
+									</p>
+									<p>
+										<b>カスタムスタイル：</b>参考URL、整形済みコード、警告（注意書き）のカスタムスタイルを作成。<small>(2019.11.6)</small>
+									</p>
+									<p>
+										<b>ページナビゲーション：</b>ナビゲーション・バーが画面を覆わないよう、スマホ閲覧時のメニューを横並びに変更。<small>(2019.11.9)</small>
 									</p>
 								</dd>
 								<!--
@@ -426,7 +444,7 @@
 								<dt tabindex="0">更新記録</dt>
 								<dd>
 									<p>
-										<b>Lightbox2に変更：</b>画像拡大のスクリプトをLuminousから、jQueryプラグインであるLightbox2に変更した。<small>(2019.10.27)</small>
+										<b>Lightbox2に変更：</b>画像拡大のスクリプトをLuminousからLightbox2に変更した。<small>(2019.10.27)</small>
 									</p>
 									<p>
 										<b>ナビゲーションの実装：</b>bootstrapデフォルトのナビゲーションから、jQueryで独自に組んだナビゲーションに変更。<small>(2019.10.28)</small>
@@ -438,7 +456,10 @@
 										<b>ページ遷移：</b>ナビゲーションのメニューからページ内リンクで移動した時に、遷移先に応じたハッシュ値をURLに追記する処理をjQueryで実装した。<small>(2019.11.4)</small>
 									</p>
 									<p>
-										<b>ナビゲーションの非表示：</b>リンク先選択の操作後、スマホでの閲覧時にはナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+										<b>ナビゲーションの非表示：</b>スマホでの閲覧時には、リンク先選択の操作後にナビゲーションのモーダルウィンドウを非表示にするよう、jQueryで実装した。<small>(2019.11.7)</small>
+									</p>
+									<p>
+										<b>ページ内リンク：</b>profile,live,cdの各コンテンツのトップに戻るページ内遷移を実装。ただし、スムーズスクロールには未対応。<small>(2019.11.12)</small>
 									</p>
 								</dd>
 								<dt tabindex="0">実装したい機能</dt>
