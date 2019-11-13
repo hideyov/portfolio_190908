@@ -4,8 +4,7 @@
 
 body {
 	max-width: 1100px;
-/*	background-color: #0076ac;*/
-	background-color: #008abc;
+	background-color: #009ccf;
 	margin: 0 auto;
 }
 
@@ -32,11 +31,6 @@ article {
 article p {
 	font-size: 0.85rem;
 }
-
-article img {
-	border-radius: 8px;
-}
-
 
 /* img */
 
@@ -66,11 +60,21 @@ article img {
 
 .movie .fluid-img {
 /*	max-width: 280px;*/
-	max-width: 280px;
+	max-width: 360px;
 }
 
 .cd-jacket img {
 	box-shadow: 2px 1px 1px rgba(200,200,200,0.3);
+}
+
+.thumbnail-img {
+	border-radius: 4px;
+}
+
+#web .thumbnail-img,
+#appli .thumbnail-img,
+#movie .thumbnail-img {
+	box-shadow: 2px 1px 1px rgba(200,200,200,0.8);
 }
 
 /*********
@@ -88,7 +92,7 @@ navbar
 	height: 64px;
 	padding: 7px 5px 8px 5px;
 	margin-bottom: 28px;
-	border-bottom: solid 4px #008abc;
+	border-bottom: solid 4px #009ccf;
 }
 
 /* navigation bar RWD対応 */
@@ -129,7 +133,6 @@ navbar
 	padding-right: 25px;
 	padding-left: 14px;
 	padding-top: 12px;
-/*	text-shadow: 1px 1px 1px rgba(0,0,255,0.6);*/
 }
 
 #logo:hover {
@@ -168,12 +171,6 @@ header {
 		cursor: pointer;
 	}
 	
-/*
-	.menu {
-		color: #cccccc;
-	}
-	
-*/
 	.menu:hover {
 		color: #ccffff;
 	}
@@ -226,13 +223,6 @@ header {
 		margin-top: 6px;
 		margin-right: 4px;
 	}
-	
-/*
-	.fa-window-close:hover {
-		transform: scale(1.1);
-		transition-duration: 0.2s;
-	}
-*/
 }
 
 /* container */
@@ -250,7 +240,9 @@ header {
 	font-style: italic;
 /*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.8rem;
-	text-shadow: 2px 1px 1px rgba(50,30,50,0.7);
+	font-weight: bold;
+	color: #333333;
+	text-shadow: 1px 0 2px #aababa;
 }
 
 .content-title {
@@ -260,20 +252,6 @@ header {
 	padding-top: 12px;
 	padding-left: 12px;
 }
-
-/*
-#web .content-title,
-#appli .content-title {
-	display: inline-block;
-	margin-top: 0;
-}
-
-#web article,
-#appli article {
-	margin-top: 20px;
-}
-*/
-/* detail, explain */
 
 .detail, .explain {
 	padding: 8px 30px;
@@ -286,9 +264,6 @@ header {
 .detail a:hover, .explain a:hover {
 	color: #09f;
 }
-
-/*
-*/
 
 div.explain {
 	padding-bottom: 12px;
@@ -403,10 +378,7 @@ footer {
 }
 
 .navAccordion > dd {
-/*	background-color: #033a58;*/
-/*	background-color: #accccc;*/
 	background-color: #9cc3ca;
-/*	background-color: #037a88;*/
 	padding: 10px 12px 2px 12px;
 }
 
@@ -478,8 +450,6 @@ img.lb-image {
 	right: 0;
 	width: 30px;
 	height: 30px;
-/*	margin-bottom: 8px;*/
 	margin-left: 10px;
-/*	background-color: #ccc;*/
 	border-radius: 0;
 }
