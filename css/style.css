@@ -396,6 +396,10 @@ vgrid (tileレイアウト)
 	color: #147073;
 }
 
+.navAccordion > dd a {
+	color: #0086aa;
+}
+
 .bio {
 	margin-top: 20px;
 	margin-bottom: 0;
@@ -459,3 +463,4 @@ img.lb-image {
 	margin-left: 10px;
 	border-radius: 0;
 }
+
