@@ -140,6 +140,13 @@ navbar
 	padding-top: 12px;
 }
 
+@media (min-width: 768px) {
+	#logo {
+		margin-top: -2px;
+		font-size: 1.5rem;
+	}
+}
+
 #logo:hover {
 	color: #ccffff;
 	text-decoration: none;
@@ -158,6 +165,12 @@ header {
 @media (min-width: 768px) {
 	#navDrawrBtn {
 		display: none;
+	}
+	
+	#nav-bar ul {
+		position: fixed;
+		right: 18px;
+		top: 10px;
 	}
 }
 
@@ -195,7 +208,7 @@ header {
 		transition-duration: 0.4s;
 	}
 	#nav-bar ul li {
-		margin-top: 7px;
+		margin-top: 12px;
 	}
 	#nav-bar ul.open-menu {
 		cursor: pointer;
