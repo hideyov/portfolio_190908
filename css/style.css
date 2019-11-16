@@ -353,7 +353,7 @@ vgrid (tileレイアウト)
 .navAccordion > dt, 
 .navAccordion > dd {
 	background-color: #147073;
-	border-top: 1px solid #9cc3ca;
+	border-top: 1px solid #b6d6da;
 } 
 
 .navAccordion > dt {
@@ -397,7 +397,7 @@ vgrid (tileレイアウト)
 }
 
 .navAccordion > dd {
-	background-color: #9cc3ca;
+	background-color: #b6d6da;
 	padding: 10px 12px 2px 12px;
 }
 
