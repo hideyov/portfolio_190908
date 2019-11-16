@@ -124,7 +124,7 @@ navbar
 }
 
 .navbar a:not(#logo):hover {
-	color: #ccffff;
+	color: #c6fafa;
 	transform: scale(1.15);
 	transition-duration: 0.2s;
 	padding-right: 5px;
@@ -148,7 +148,7 @@ navbar
 }
 
 #logo:hover {
-	color: #ccffff;
+	color: #c6fafa;
 	text-decoration: none;
 }
 
@@ -190,7 +190,7 @@ header {
 	}
 	
 	.menu:hover {
-		color: #ccffff;
+		color: #c6fafa;
 	}
 	
 	#nav-bar ul {
@@ -259,8 +259,8 @@ header {
 /*	font-family: 'Monda', sans-serif;*/
 	font-size: 1.8rem;
 	font-weight: bold;
-	color: #333333;
-	text-shadow: 1px 0 2px #aababa;
+	color: #c6fafa;
+/*	text-shadow: 1px 0 2px #aababa;*/
 }
 
 .content-title {
@@ -367,7 +367,7 @@ vgrid (tileレイアウト)
 }
 
 .navAccordion > dt:hover {
-	color: #ccffff;
+	color: #c6fafa;
 	transition-duration: 0.2s;
 }
 
@@ -429,7 +429,7 @@ vgrid (tileレイアウト)
 	transform: scale(1.15);
 	padding-right: 5px;
 	padding-left: 5px;
-	color: #ccffff;
+	color: #c6fafa;
 }
 
 /* URLの文字とマージン */
