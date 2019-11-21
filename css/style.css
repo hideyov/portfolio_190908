@@ -408,6 +408,20 @@ vgrid (tileレイアウト)
 	margin-bottom: 0;
 }
 
+table#certification {
+	border-color: transparent;
+	font-size: 0.8rem;
+	margin-bottom: 4px;
+}
+
+table#certification td:nth-child(odd) {
+	padding: 0 10px 0 0;
+}
+
+table#certification td:nth-child(even) {
+	padding: 0 0 0 4px;
+}
+
 /* nav-top - 現在位置を表す li の色を変える */
 
 .nav-link {
