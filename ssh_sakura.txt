@@ -10,5 +10,5 @@ pw: if8vue56js
 
 ポート：22(パッシブFTPを使用)
 初期フォルダ：/home/hideyov/www/portfolio
-ローカルパス： ~/bitBucket_eje/imagicaDigitalScape_portfolio_190920
+ローカルパス： ~/bitBucket_eje/hideyo_uesugi_portfolio
 SSHキー： ~/.ssh/id_rsa.pub
