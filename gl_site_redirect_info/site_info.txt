@@ -1,0 +1,15 @@
+gl_site_redirect_infoYummy FTP Pro接続情報
+
+https://www.hideyov.com/gernm から https://www.gernm.com へのリダイレクトpage
+
+protocol: FTPS(SSL/TLS)
+server: www398.sakura.ne.jp
+ユーザ名: hideyov
+pw: if8vue56js
+
+port: 21
+初期フォルダ: /home/hideyov/www/gernm
+
+local path: ~/bitBucket_eje/hideyo_uesugi_portfolio/gl_site_redirect_info
+
+SSH key: ~/.ssh/id_rsa.pub
